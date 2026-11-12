@@ -1,0 +1,33 @@
+{
+  "processor": "AMD Ryzen 9 5950X 16-Core Processor",
+  "cpu": 14,
+  "sibling": 30,
+  "policy": {
+    "scaling_driver": "amd-pstate-epp",
+    "scaling_governor": "powersave",
+    "energy_performance_preference": "balance_performance",
+    "scaling_min_freq": "1746460",
+    "scaling_max_freq": "5086181",
+    "scaling_cur_freq": "1746460"
+  },
+  "boost": "1",
+  "instruction_probe": {
+    "argv": [
+      "perf",
+      "stat",
+      "-e",
+      "instructions:u",
+      "--",
+      "true"
+    ],
+    "start": 1794509807.4064867,
+    "end": 1794509807.4342635,
+    "wall": 0.02777291100937873,
+    "user": 0.009712999999999998,
+    "system": 0.012568,
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Error:\nNo supported events found.\nAccess to performance monitoring and observability operations is limited.\nEnforced MAC policy settings (SELinux) can limit access to performance\nmonitoring and observability operations. Inspect system audit records for\nmore perf_event access control information and adjusting the policy.\nConsider adjusting kernel.perf_event_paranoid setting to open\naccess to performance monitoring and observability operations for processes\nwithout CAP_PERFMON, CAP_SYS_PTRACE or CAP_SYS_ADMIN Linux capability.\nMore information can be found at 'Perf events and tool security' document:\nhttps://www.kernel.org/doc/html/latest/admin-guide/perf-security.html\nperf_event_paranoid setting is 2:\n  -1: Allow use of (almost) all events by all users\n      Ignore mlock limit after perf_event_mlock_kb without CAP_IPC_LOCK\n>= 0: Disallow raw and ftrace function tracepoint access\n>= 1: Disallow CPU event access\n>= 2: Disallow kernel profiling\nTo make the adjusted perf_event_paranoid setting permanent preserve it\nin the system sysctl configuration (e.g. kernel.perf_event_paranoid = <setting>)\n",
+    "perf_event_paranoid": "2"
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "argv": [
+      "cargo",
+      "test",
+      "--locked",
+      "-p",
+      "nrz-matrix",
+      "--test",
+      "prepared_expm1",
+      "replay_and_accounting",
+      "--",
+      "--nocapture"
+    ],
+    "wall": 60.97638328699395,
+    "user": 6.339457,
+    "system": 9.052654,
+    "exit": 0,
+    "log": "accounting/0.txt",
+    "jobs": 1,
+    "toolchain": "nightly-2026-11-06",
+    "rustc": "249c1e4e31111b54ad2483cfd4cea06c7020c653"
+  },
+  {
+    "argv": [
+      "cargo",
+      "test",
+      "--locked",
+      "-p",
+      "nrz-matrix",
+      "--test",
+      "prepared_expm1",
+      "resources",
+      "--",
+      "--nocapture"
+    ],
+    "wall": 4.11004751699511,
+    "user": 7.496462,
+    "system": 9.18618,
+    "exit": 0,
+    "log": "accounting/1.txt",
+    "jobs": 1,
+    "toolchain": "nightly-2026-11-06",
+    "rustc": "249c1e4e31111b54ad2483cfd4cea06c7020c653"
+  }
+]

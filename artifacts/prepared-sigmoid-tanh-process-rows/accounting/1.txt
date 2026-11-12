@@ -1,0 +1,6 @@
+running 4 tests
+test prepared_expm1_native_resources ... ok
+test exp::prepared_exp_resources ... ok
+test tanh_owner::owner_tanh_resources ... ok
+test sigmoid_owner::owner_sigmoid_resources ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 39 filtered out; finished in 0.08s

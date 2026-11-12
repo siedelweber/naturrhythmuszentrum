@@ -1,0 +1,5486 @@
+[
+  {
+    "name": "256-disabled",
+    "count": 256,
+    "mode": "disabled",
+    "cpu": 14,
+    "pair": "14,30",
+    "start": 1794508920.459031,
+    "end": 1794508925.8334148,
+    "wall": 5.374383112066425,
+    "runner_exit": 0,
+    "before": {
+      "at": 1794508920.4580452,
+      "cpus": {
+        "cpu0": [
+          7431176,
+          9911920,
+          2271168,
+          42451981,
+          63358,
+          244201,
+          171892,
+          0
+        ],
+        "cpu1": [
+          7676987,
+          9587591,
+          2274974,
+          42578976,
+          64207,
+          239735,
+          97651,
+          0
+        ],
+        "cpu2": [
+          6785416,
+          8552195,
+          2149014,
+          44640610,
+          73950,
+          230595,
+          64781,
+          0
+        ],
+        "cpu3": [
+          6953838,
+          8676839,
+          2152830,
+          44339678,
+          74496,
+          230821,
+          47721,
+          0
+        ],
+        "cpu4": [
+          6312818,
+          8170045,
+          2158268,
+          45496100,
+          73914,
+          221948,
+          44161,
+          0
+        ],
+        "cpu5": [
+          7673459,
+          9680239,
+          2438820,
+          42399624,
+          71513,
+          248424,
+          48542,
+          0
+        ],
+        "cpu6": [
+          6426849,
+          8207910,
+          2155993,
+          45378199,
+          75466,
+          225867,
+          39396,
+          0
+        ],
+        "cpu7": [
+          7859791,
+          10090483,
+          2442240,
+          41807027,
+          64751,
+          248527,
+          42338,
+          0
+        ],
+        "cpu8": [
+          5658875,
+          7162653,
+          2365543,
+          46962319,
+          69570,
+          217054,
+          44867,
+          0
+        ],
+        "cpu9": [
+          6533353,
+          8714140,
+          2834434,
+          44148295,
+          68868,
+          239568,
+          51761,
+          0
+        ],
+        "cpu10": [
+          5955186,
+          7705186,
+          2421936,
+          46116370,
+          69672,
+          225832,
+          44510,
+          0
+        ],
+        "cpu11": [
+          6536438,
+          8878507,
+          2666064,
+          44105640,
+          65513,
+          230756,
+          44188,
+          0
+        ],
+        "cpu12": [
+          4332352,
+          9196060,
+          2315264,
+          46318839,
+          75070,
+          220758,
+          48876,
+          0
+        ],
+        "cpu13": [
+          4030841,
+          8486916,
+          2242329,
+          47396201,
+          76142,
+          216485,
+          44839,
+          0
+        ],
+        "cpu14": [
+          3757247,
+          8192396,
+          2265352,
+          47945303,
+          72482,
+          212649,
+          43830,
+          0
+        ],
+        "cpu15": [
+          4191450,
+          9033607,
+          2400717,
+          46513713,
+          78999,
+          220985,
+          43247,
+          0
+        ],
+        "cpu16": [
+          5752943,
+          10772640,
+          1888777,
+          43761448,
+          56790,
+          221058,
+          31634,
+          0
+        ],
+        "cpu17": [
+          6433413,
+          11746965,
+          1910862,
+          42065433,
+          48726,
+          223805,
+          28563,
+          0
+        ],
+        "cpu18": [
+          5175219,
+          10020283,
+          1903758,
+          45055227,
+          67322,
+          216867,
+          30905,
+          0
+        ],
+        "cpu19": [
+          5613244,
+          10853091,
+          1880030,
+          43806516,
+          58771,
+          219301,
+          28901,
+          0
+        ],
+        "cpu20": [
+          4386256,
+          9015434,
+          1952400,
+          46797345,
+          77024,
+          211833,
+          32686,
+          0
+        ],
+        "cpu21": [
+          7523530,
+          13465003,
+          2018068,
+          39139034,
+          38970,
+          233229,
+          26433,
+          0
+        ],
+        "cpu22": [
+          4775502,
+          9671252,
+          1914507,
+          45798013,
+          68682,
+          213974,
+          32055,
+          0
+        ],
+        "cpu23": [
+          7445257,
+          12886186,
+          2015012,
+          39802594,
+          41162,
+          231809,
+          26742,
+          0
+        ],
+        "cpu24": [
+          4324725,
+          8949335,
+          2058948,
+          46838067,
+          65045,
+          209365,
+          35656,
+          0
+        ],
+        "cpu25": [
+          5769145,
+          11195527,
+          2021759,
+          43187391,
+          48162,
+          213872,
+          29757,
+          0
+        ],
+        "cpu26": [
+          4451870,
+          9305969,
+          1974408,
+          46443217,
+          62278,
+          207710,
+          33087,
+          0
+        ],
+        "cpu27": [
+          5139893,
+          10040867,
+          1950051,
+          45048057,
+          51536,
+          207579,
+          30467,
+          0
+        ],
+        "cpu28": [
+          4845737,
+          9892359,
+          2025174,
+          45411693,
+          56969,
+          210976,
+          33734,
+          0
+        ],
+        "cpu29": [
+          4100274,
+          8730810,
+          2115880,
+          47220783,
+          69029,
+          211165,
+          36838,
+          0
+        ],
+        "cpu30": [
+          3810616,
+          8320467,
+          2180916,
+          47857852,
+          69335,
+          206893,
+          38690,
+          0
+        ],
+        "cpu31": [
+          5173801,
+          10823327,
+          1909146,
+          44269465,
+          44071,
+          211389,
+          29434,
+          0
+        ]
+      },
+      "pairs": {
+        "0,16": [
+          0,
+          16
+        ],
+        "1,17": [
+          1,
+          17
+        ],
+        "2,18": [
+          2,
+          18
+        ],
+        "3,19": [
+          3,
+          19
+        ],
+        "4,20": [
+          4,
+          20
+        ],
+        "5,21": [
+          5,
+          21
+        ],
+        "6,22": [
+          6,
+          22
+        ],
+        "7,23": [
+          7,
+          23
+        ],
+        "8,24": [
+          8,
+          24
+        ],
+        "9,25": [
+          9,
+          25
+        ],
+        "10,26": [
+          10,
+          26
+        ],
+        "11,27": [
+          11,
+          27
+        ],
+        "12,28": [
+          12,
+          28
+        ],
+        "13,29": [
+          13,
+          29
+        ],
+        "14,30": [
+          14,
+          30
+        ],
+        "15,31": [
+          15,
+          31
+        ]
+      },
+      "freq": {
+        "cpu0": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4101520"
+        },
+        "cpu1": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu2": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu3": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4101533"
+        },
+        "cpu4": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4135045"
+        },
+        "cpu5": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu6": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3845570"
+        },
+        "cpu7": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4135083"
+        },
+        "cpu8": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3469570"
+        },
+        "cpu9": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3586989"
+        },
+        "cpu10": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3310030"
+        },
+        "cpu11": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu12": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3319230"
+        },
+        "cpu13": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4157919"
+        },
+        "cpu14": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu15": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3297259"
+        },
+        "cpu16": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu17": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4132909"
+        },
+        "cpu18": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4132945"
+        },
+        "cpu19": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu20": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu21": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4117506"
+        },
+        "cpu22": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4117465"
+        },
+        "cpu23": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu24": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3587343"
+        },
+        "cpu25": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu26": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3294789"
+        },
+        "cpu27": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu28": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu29": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4114373"
+        },
+        "cpu30": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu31": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3596816"
+        }
+      },
+      "boost": "1",
+      "load": [
+        19.56591796875,
+        14.32177734375,
+        16.03515625
+      ],
+      "pressure": {
+        "cpu": "some avg10=0.10 avg60=9.78 avg300=8.11 total=55262679769\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+        "memory": "some avg10=0.00 avg60=0.01 avg300=0.00 total=2730620499\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2508725649",
+        "io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1837097003\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=722537343"
+      },
+      "other_account_work": false,
+      "other_account_work_count": 0,
+      "count_scope": "non-housekeeping process observations plus non-housekeeping service observations; not a deduplicated workload count"
+    },
+    "after": {
+      "at": 1794508925.833117,
+      "cpus": {
+        "cpu0": [
+          7431270,
+          9912296,
+          2271183,
+          42452030,
+          63358,
+          244205,
+          171894,
+          0
+        ],
+        "cpu1": [
+          7677008,
+          9588018,
+          2274990,
+          42579045,
+          64207,
+          239738,
+          97653,
+          0
+        ],
+        "cpu2": [
+          6785446,
+          8552236,
+          2149052,
+          44641037,
+          73950,
+          230599,
+          64791,
+          0
+        ],
+        "cpu3": [
+          6953886,
+          8676850,
+          2152879,
+          44340114,
+          74496,
+          230825,
+          47724,
+          0
+        ],
+        "cpu4": [
+          6312863,
+          8170085,
+          2158314,
+          45496512,
+          73914,
+          221952,
+          44162,
+          0
+        ],
+        "cpu5": [
+          7673507,
+          9680261,
+          2438877,
+          42400033,
+          71513,
+          248428,
+          48543,
+          0
+        ],
+        "cpu6": [
+          6426911,
+          8207999,
+          2156054,
+          45378533,
+          75466,
+          225872,
+          39397,
+          0
+        ],
+        "cpu7": [
+          7859837,
+          10090587,
+          2442294,
+          41807366,
+          64751,
+          248532,
+          42338,
+          0
+        ],
+        "cpu8": [
+          5658907,
+          7162657,
+          2365585,
+          46962791,
+          69570,
+          217058,
+          44867,
+          0
+        ],
+        "cpu9": [
+          6533374,
+          8714172,
+          2834468,
+          44148751,
+          68869,
+          239571,
+          51761,
+          0
+        ],
+        "cpu10": [
+          5955219,
+          7705187,
+          2421975,
+          46116845,
+          69672,
+          225835,
+          44511,
+          0
+        ],
+        "cpu11": [
+          6536462,
+          8878631,
+          2666094,
+          44106006,
+          65513,
+          230759,
+          44188,
+          0
+        ],
+        "cpu12": [
+          4332392,
+          9196087,
+          2315311,
+          46319273,
+          75070,
+          220762,
+          48877,
+          0
+        ],
+        "cpu13": [
+          4030873,
+          8486917,
+          2242368,
+          47396678,
+          76142,
+          216489,
+          44839,
+          0
+        ],
+        "cpu14": [
+          3757270,
+          8192489,
+          2265384,
+          47945702,
+          72482,
+          212653,
+          43830,
+          0
+        ],
+        "cpu15": [
+          4191494,
+          9033615,
+          2400766,
+          46514157,
+          78999,
+          220988,
+          43247,
+          0
+        ],
+        "cpu16": [
+          5753005,
+          10772712,
+          1888830,
+          43761805,
+          56790,
+          221063,
+          31635,
+          0
+        ],
+        "cpu17": [
+          6433501,
+          11747002,
+          1910938,
+          42065776,
+          48726,
+          223811,
+          28563,
+          0
+        ],
+        "cpu18": [
+          5175223,
+          10020777,
+          1903762,
+          45055258,
+          67322,
+          216871,
+          30905,
+          0
+        ],
+        "cpu19": [
+          5613244,
+          10853613,
+          1880030,
+          43806527,
+          58771,
+          219305,
+          28902,
+          0
+        ],
+        "cpu20": [
+          4386423,
+          9015723,
+          1952436,
+          46797388,
+          77024,
+          211836,
+          32687,
+          0
+        ],
+        "cpu21": [
+          7523530,
+          13465536,
+          2018068,
+          39139034,
+          38970,
+          233234,
+          26433,
+          0
+        ],
+        "cpu22": [
+          4775573,
+          9671569,
+          1914557,
+          45798109,
+          68682,
+          213978,
+          32055,
+          0
+        ],
+        "cpu23": [
+          7445265,
+          12886611,
+          2015024,
+          39802686,
+          41162,
+          231812,
+          26742,
+          0
+        ],
+        "cpu24": [
+          4324755,
+          8949338,
+          2058987,
+          46838540,
+          65045,
+          209368,
+          35656,
+          0
+        ],
+        "cpu25": [
+          5769167,
+          11195861,
+          2021781,
+          43187550,
+          48162,
+          213874,
+          29757,
+          0
+        ],
+        "cpu26": [
+          4451904,
+          9305971,
+          1974450,
+          46443688,
+          62278,
+          207714,
+          33087,
+          0
+        ],
+        "cpu27": [
+          5139910,
+          10041153,
+          1950072,
+          45048274,
+          51536,
+          207582,
+          30467,
+          0
+        ],
+        "cpu28": [
+          4845774,
+          9892360,
+          2025218,
+          45412161,
+          56969,
+          210980,
+          33735,
+          0
+        ],
+        "cpu29": [
+          4100304,
+          8730810,
+          2115919,
+          47221261,
+          69029,
+          211168,
+          36838,
+          0
+        ],
+        "cpu30": [
+          3810648,
+          8320468,
+          2180951,
+          47858332,
+          69335,
+          206896,
+          38690,
+          0
+        ],
+        "cpu31": [
+          5173840,
+          10823337,
+          1909195,
+          44269916,
+          44071,
+          211393,
+          29434,
+          0
+        ]
+      },
+      "pairs": {
+        "0,16": [
+          0,
+          16
+        ],
+        "1,17": [
+          1,
+          17
+        ],
+        "2,18": [
+          2,
+          18
+        ],
+        "3,19": [
+          3,
+          19
+        ],
+        "4,20": [
+          4,
+          20
+        ],
+        "5,21": [
+          5,
+          21
+        ],
+        "6,22": [
+          6,
+          22
+        ],
+        "7,23": [
+          7,
+          23
+        ],
+        "8,24": [
+          8,
+          24
+        ],
+        "9,25": [
+          9,
+          25
+        ],
+        "10,26": [
+          10,
+          26
+        ],
+        "11,27": [
+          11,
+          27
+        ],
+        "12,28": [
+          12,
+          28
+        ],
+        "13,29": [
+          13,
+          29
+        ],
+        "14,30": [
+          14,
+          30
+        ],
+        "15,31": [
+          15,
+          31
+        ]
+      },
+      "freq": {
+        "cpu0": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3917851"
+        },
+        "cpu1": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3918483"
+        },
+        "cpu2": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3914029"
+        },
+        "cpu3": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3917630"
+        },
+        "cpu4": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3917766"
+        },
+        "cpu5": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3910780"
+        },
+        "cpu6": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3922920"
+        },
+        "cpu7": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3917839"
+        },
+        "cpu8": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3216968"
+        },
+        "cpu9": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3917797"
+        },
+        "cpu10": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3130050"
+        },
+        "cpu11": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3913082"
+        },
+        "cpu12": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3910473"
+        },
+        "cpu13": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3917936"
+        },
+        "cpu14": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3144246"
+        },
+        "cpu15": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3131743"
+        },
+        "cpu16": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3906798"
+        },
+        "cpu17": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3917803"
+        },
+        "cpu18": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3917804"
+        },
+        "cpu19": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3908572"
+        },
+        "cpu20": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3913436"
+        },
+        "cpu21": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3908579"
+        },
+        "cpu22": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3908642"
+        },
+        "cpu23": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3909469"
+        },
+        "cpu24": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3121163"
+        },
+        "cpu25": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3883692"
+        },
+        "cpu26": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3302723"
+        },
+        "cpu27": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3883637"
+        },
+        "cpu28": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3888446"
+        },
+        "cpu29": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3697704"
+        },
+        "cpu30": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3090133"
+        },
+        "cpu31": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3451055"
+        }
+      },
+      "boost": "1",
+      "load": [
+        19.0400390625,
+        14.2998046875,
+        16.0185546875
+      ],
+      "pressure": {
+        "cpu": "some avg10=0.07 avg60=9.15 avg300=8.00 total=55262709629\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+        "memory": "some avg10=0.00 avg60=0.01 avg300=0.00 total=2730620499\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2508725649",
+        "io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1837097067\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=722537405"
+      },
+      "other_account_work": false,
+      "other_account_work_count": 0,
+      "count_scope": "non-housekeeping process observations plus non-housekeeping service observations; not a deduplicated workload count"
+    },
+    "group_interval_idle_percent": {
+      "cpu0": 9.074074074074074,
+      "cpu1": 12.825278810408921,
+      "cpu2": 77.63636363636364,
+      "cpu3": 79.12885662431943,
+      "cpu4": 75.18248175182482,
+      "cpu5": 75.60073937153419,
+      "cpu6": 60.507246376811594,
+      "cpu7": 61.86131386861314,
+      "cpu8": 85.1985559566787,
+      "cpu9": 83.36380255941499,
+      "cpu10": 86.05072463768116,
+      "cpu11": 66.91042047531992,
+      "cpu12": 78.48101265822785,
+      "cpu13": 86.25678119349006,
+      "cpu14": 72.41379310344827,
+      "cpu15": 81.02189781021897,
+      "cpu16": 64.9090909090909,
+      "cpu17": 62.36363636363637,
+      "cpu18": 5.772811918063315,
+      "cpu19": 2.0446096654275094,
+      "cpu20": 7.977736549165121,
+      "cpu21": 0.0,
+      "cpu22": 17.843866171003718,
+      "cpu23": 17.037037037037038,
+      "cpu24": 86.31386861313868,
+      "cpu25": 29.499072356215212,
+      "cpu26": 85.17179023508137,
+      "cpu27": 39.88970588235294,
+      "cpu28": 84.32432432432432,
+      "cpu29": 86.9090909090909,
+      "cpu30": 87.11433756805808,
+      "cpu31": 81.55515370705244
+    }
+  },
+  {
+    "name": "256-enabled",
+    "count": 256,
+    "mode": "enabled",
+    "cpu": 14,
+    "pair": "14,30",
+    "start": 1794508955.8968189,
+    "end": 1794508962.3502548,
+    "wall": 6.453436064999551,
+    "runner_exit": 0,
+    "before": {
+      "at": 1794508955.8960993,
+      "cpus": {
+        "cpu0": [
+          7431307,
+          9913501,
+          2271186,
+          42453763,
+          63358,
+          244214,
+          171918,
+          0
+        ],
+        "cpu1": [
+          7677008,
+          9589184,
+          2274991,
+          42580872,
+          64207,
+          239745,
+          97661,
+          0
+        ],
+        "cpu2": [
+          6785497,
+          8553336,
+          2149059,
+          44642877,
+          73950,
+          230606,
+          64796,
+          0
+        ],
+        "cpu3": [
+          6954128,
+          8677602,
+          2152916,
+          44342081,
+          74496,
+          230831,
+          47726,
+          0
+        ],
+        "cpu4": [
+          6312886,
+          8171062,
+          2158344,
+          45498479,
+          73914,
+          221958,
+          44165,
+          0
+        ],
+        "cpu5": [
+          7673613,
+          9681274,
+          2438939,
+          42401852,
+          71513,
+          248435,
+          48543,
+          0
+        ],
+        "cpu6": [
+          6427037,
+          8208420,
+          2156108,
+          45380934,
+          75466,
+          225876,
+          39398,
+          0
+        ],
+        "cpu7": [
+          7859837,
+          10091092,
+          2442296,
+          41809862,
+          64751,
+          248535,
+          42339,
+          0
+        ],
+        "cpu8": [
+          5658909,
+          7162730,
+          2365587,
+          46965721,
+          69570,
+          217058,
+          44867,
+          0
+        ],
+        "cpu9": [
+          6533411,
+          8716152,
+          2834497,
+          44149704,
+          68869,
+          239580,
+          51762,
+          0
+        ],
+        "cpu10": [
+          5955221,
+          7705212,
+          2421976,
+          46119824,
+          69672,
+          225835,
+          44511,
+          0
+        ],
+        "cpu11": [
+          6536464,
+          8880028,
+          2666096,
+          44107607,
+          65513,
+          230765,
+          44188,
+          0
+        ],
+        "cpu12": [
+          4332395,
+          9196138,
+          2315315,
+          46322224,
+          75070,
+          220763,
+          48877,
+          0
+        ],
+        "cpu13": [
+          4030874,
+          8486920,
+          2242371,
+          47399678,
+          76142,
+          216489,
+          44839,
+          0
+        ],
+        "cpu14": [
+          3757271,
+          8192490,
+          2265386,
+          47948706,
+          72482,
+          212653,
+          43830,
+          0
+        ],
+        "cpu15": [
+          4191497,
+          9033680,
+          2400769,
+          46517093,
+          78999,
+          220989,
+          43247,
+          0
+        ],
+        "cpu16": [
+          5753005,
+          10774664,
+          1888832,
+          43762845,
+          56790,
+          221075,
+          31635,
+          0
+        ],
+        "cpu17": [
+          6433501,
+          11748975,
+          1910943,
+          42066794,
+          48726,
+          223821,
+          28564,
+          0
+        ],
+        "cpu18": [
+          5175687,
+          10021952,
+          1903876,
+          45056501,
+          67322,
+          216881,
+          30905,
+          0
+        ],
+        "cpu19": [
+          5613320,
+          10855489,
+          1880078,
+          43807524,
+          58771,
+          219316,
+          28902,
+          0
+        ],
+        "cpu20": [
+          4386643,
+          9017386,
+          1952504,
+          46798432,
+          77024,
+          211847,
+          32687,
+          0
+        ],
+        "cpu21": [
+          7523567,
+          13467529,
+          2018074,
+          39139992,
+          38970,
+          233246,
+          26433,
+          0
+        ],
+        "cpu22": [
+          4776410,
+          9672802,
+          1914817,
+          45798773,
+          68682,
+          213990,
+          32055,
+          0
+        ],
+        "cpu23": [
+          7445265,
+          12889224,
+          2015025,
+          39803059,
+          41162,
+          231831,
+          26742,
+          0
+        ],
+        "cpu24": [
+          4324756,
+          8949343,
+          2058989,
+          46841539,
+          65045,
+          209369,
+          35656,
+          0
+        ],
+        "cpu25": [
+          5769168,
+          11196081,
+          2021781,
+          43190334,
+          48162,
+          213875,
+          29758,
+          0
+        ],
+        "cpu26": [
+          4451905,
+          9305980,
+          1974452,
+          46446683,
+          62278,
+          207714,
+          33087,
+          0
+        ],
+        "cpu27": [
+          5139935,
+          10041244,
+          1950091,
+          45051146,
+          51536,
+          207583,
+          30468,
+          0
+        ],
+        "cpu28": [
+          4845776,
+          9892360,
+          2025219,
+          45415165,
+          56969,
+          210980,
+          33735,
+          0
+        ],
+        "cpu29": [
+          4100305,
+          8730813,
+          2115920,
+          47224263,
+          69029,
+          211169,
+          36838,
+          0
+        ],
+        "cpu30": [
+          3810648,
+          8320469,
+          2180952,
+          47861337,
+          69335,
+          206896,
+          38690,
+          0
+        ],
+        "cpu31": [
+          5173841,
+          10823343,
+          1909196,
+          44272915,
+          44071,
+          211393,
+          29434,
+          0
+        ]
+      },
+      "pairs": {
+        "0,16": [
+          0,
+          16
+        ],
+        "1,17": [
+          1,
+          17
+        ],
+        "2,18": [
+          2,
+          18
+        ],
+        "3,19": [
+          3,
+          19
+        ],
+        "4,20": [
+          4,
+          20
+        ],
+        "5,21": [
+          5,
+          21
+        ],
+        "6,22": [
+          6,
+          22
+        ],
+        "7,23": [
+          7,
+          23
+        ],
+        "8,24": [
+          8,
+          24
+        ],
+        "9,25": [
+          9,
+          25
+        ],
+        "10,26": [
+          10,
+          26
+        ],
+        "11,27": [
+          11,
+          27
+        ],
+        "12,28": [
+          12,
+          28
+        ],
+        "13,29": [
+          13,
+          29
+        ],
+        "14,30": [
+          14,
+          30
+        ],
+        "15,31": [
+          15,
+          31
+        ]
+      },
+      "freq": {
+        "cpu0": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3892816"
+        },
+        "cpu1": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3892834"
+        },
+        "cpu2": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu3": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu4": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu5": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3883214"
+        },
+        "cpu6": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3883247"
+        },
+        "cpu7": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu8": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu9": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu10": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3867070"
+        },
+        "cpu11": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu12": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu13": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu14": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu15": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3876685"
+        },
+        "cpu16": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu17": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu18": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3876812"
+        },
+        "cpu19": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3883327"
+        },
+        "cpu20": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3883329"
+        },
+        "cpu21": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3883348"
+        },
+        "cpu22": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu23": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3883293"
+        },
+        "cpu24": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu25": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3867915"
+        },
+        "cpu26": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu27": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu28": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu29": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3146280"
+        },
+        "cpu30": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu31": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        }
+      },
+      "boost": "1",
+      "load": [
+        15.3056640625,
+        13.8408203125,
+        15.81005859375
+      ],
+      "pressure": {
+        "cpu": "some avg10=0.00 avg60=5.55 avg300=7.21 total=55262730720\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+        "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2730620499\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2508725649",
+        "io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1837097190\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=722537472"
+      },
+      "other_account_work": false,
+      "other_account_work_count": 0,
+      "count_scope": "non-housekeeping process observations plus non-housekeeping service observations; not a deduplicated workload count"
+    },
+    "after": {
+      "at": 1794508962.3499448,
+      "cpus": {
+        "cpu0": [
+          7431371,
+          9913758,
+          2271222,
+          42454043,
+          63358,
+          244217,
+          171924,
+          0
+        ],
+        "cpu1": [
+          7677017,
+          9589659,
+          2275001,
+          42581021,
+          64207,
+          239749,
+          97664,
+          0
+        ],
+        "cpu2": [
+          6785523,
+          8553390,
+          2149091,
+          44643412,
+          73950,
+          230609,
+          64803,
+          0
+        ],
+        "cpu3": [
+          6954174,
+          8677632,
+          2152958,
+          44342610,
+          74496,
+          230835,
+          47729,
+          0
+        ],
+        "cpu4": [
+          6312938,
+          8171111,
+          2158393,
+          45498980,
+          73914,
+          221962,
+          44166,
+          0
+        ],
+        "cpu5": [
+          7673656,
+          9681286,
+          2438992,
+          42402395,
+          71513,
+          248440,
+          48544,
+          0
+        ],
+        "cpu6": [
+          6427096,
+          8208562,
+          2156160,
+          45381334,
+          75466,
+          225881,
+          39398,
+          0
+        ],
+        "cpu7": [
+          7859882,
+          10091145,
+          2442338,
+          41810368,
+          64751,
+          248539,
+          42339,
+          0
+        ],
+        "cpu8": [
+          5658936,
+          7162732,
+          2365622,
+          46966312,
+          69570,
+          217061,
+          44868,
+          0
+        ],
+        "cpu9": [
+          6533435,
+          8716174,
+          2834531,
+          44150277,
+          68869,
+          239582,
+          51762,
+          0
+        ],
+        "cpu10": [
+          5955251,
+          7705214,
+          2422010,
+          46120413,
+          69672,
+          225838,
+          44511,
+          0
+        ],
+        "cpu11": [
+          6536498,
+          8880037,
+          2666138,
+          44108175,
+          65513,
+          230768,
+          44188,
+          0
+        ],
+        "cpu12": [
+          4332430,
+          9196144,
+          2315356,
+          46322798,
+          75070,
+          220766,
+          48877,
+          0
+        ],
+        "cpu13": [
+          4030902,
+          8486921,
+          2242401,
+          47400270,
+          76142,
+          216492,
+          44839,
+          0
+        ],
+        "cpu14": [
+          3757295,
+          8192706,
+          2265414,
+          47949093,
+          72482,
+          212656,
+          43831,
+          0
+        ],
+        "cpu15": [
+          4191534,
+          9033686,
+          2400815,
+          46517658,
+          78999,
+          220992,
+          43248,
+          0
+        ],
+        "cpu16": [
+          5753044,
+          10774950,
+          1888878,
+          43763119,
+          56790,
+          221081,
+          31636,
+          0
+        ],
+        "cpu17": [
+          6433545,
+          11749132,
+          1910995,
+          42067193,
+          48726,
+          223826,
+          28564,
+          0
+        ],
+        "cpu18": [
+          5175731,
+          10022511,
+          1903899,
+          45056518,
+          67322,
+          216885,
+          30905,
+          0
+        ],
+        "cpu19": [
+          5613320,
+          10856130,
+          1880078,
+          43807525,
+          58771,
+          219320,
+          28902,
+          0
+        ],
+        "cpu20": [
+          4386677,
+          9017681,
+          1952525,
+          46798729,
+          77024,
+          211851,
+          32687,
+          0
+        ],
+        "cpu21": [
+          7523567,
+          13468168,
+          2018074,
+          39139993,
+          38970,
+          233251,
+          26434,
+          0
+        ],
+        "cpu22": [
+          4776507,
+          9673136,
+          1914838,
+          45798963,
+          68682,
+          213993,
+          32055,
+          0
+        ],
+        "cpu23": [
+          7445480,
+          12889537,
+          2015084,
+          39803113,
+          41162,
+          231835,
+          26742,
+          0
+        ],
+        "cpu24": [
+          4324782,
+          8949348,
+          2059020,
+          46842130,
+          65045,
+          209372,
+          35657,
+          0
+        ],
+        "cpu25": [
+          5769215,
+          11196281,
+          2021802,
+          43190714,
+          48162,
+          213878,
+          29758,
+          0
+        ],
+        "cpu26": [
+          4451937,
+          9305981,
+          1974492,
+          46447267,
+          62278,
+          207717,
+          33088,
+          0
+        ],
+        "cpu27": [
+          5139987,
+          10041298,
+          1950142,
+          45051644,
+          51536,
+          207586,
+          30468,
+          0
+        ],
+        "cpu28": [
+          4845813,
+          9892361,
+          2025261,
+          45415743,
+          56969,
+          210983,
+          33735,
+          0
+        ],
+        "cpu29": [
+          4100331,
+          8730816,
+          2115953,
+          47224856,
+          69029,
+          211172,
+          36838,
+          0
+        ],
+        "cpu30": [
+          3810671,
+          8320471,
+          2180983,
+          47861937,
+          69335,
+          206898,
+          38690,
+          0
+        ],
+        "cpu31": [
+          5173879,
+          10823349,
+          1909236,
+          44273490,
+          44071,
+          211396,
+          29434,
+          0
+        ]
+      },
+      "pairs": {
+        "0,16": [
+          0,
+          16
+        ],
+        "1,17": [
+          1,
+          17
+        ],
+        "2,18": [
+          2,
+          18
+        ],
+        "3,19": [
+          3,
+          19
+        ],
+        "4,20": [
+          4,
+          20
+        ],
+        "5,21": [
+          5,
+          21
+        ],
+        "6,22": [
+          6,
+          22
+        ],
+        "7,23": [
+          7,
+          23
+        ],
+        "8,24": [
+          8,
+          24
+        ],
+        "9,25": [
+          9,
+          25
+        ],
+        "10,26": [
+          10,
+          26
+        ],
+        "11,27": [
+          11,
+          27
+        ],
+        "12,28": [
+          12,
+          28
+        ],
+        "13,29": [
+          13,
+          29
+        ],
+        "14,30": [
+          14,
+          30
+        ],
+        "15,31": [
+          15,
+          31
+        ]
+      },
+      "freq": {
+        "cpu0": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3967762"
+        },
+        "cpu1": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3967760"
+        },
+        "cpu2": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3967204"
+        },
+        "cpu3": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3963833"
+        },
+        "cpu4": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3811416"
+        },
+        "cpu5": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3969504"
+        },
+        "cpu6": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3971108"
+        },
+        "cpu7": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu8": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3969143"
+        },
+        "cpu9": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4008513"
+        },
+        "cpu10": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3198482"
+        },
+        "cpu11": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4009663"
+        },
+        "cpu12": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3199376"
+        },
+        "cpu13": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3200517"
+        },
+        "cpu14": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3421323"
+        },
+        "cpu15": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3243458"
+        },
+        "cpu16": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4052375"
+        },
+        "cpu17": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4048355"
+        },
+        "cpu18": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4051496"
+        },
+        "cpu19": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4085311"
+        },
+        "cpu20": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3730023"
+        },
+        "cpu21": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4085449"
+        },
+        "cpu22": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4085280"
+        },
+        "cpu23": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4085214"
+        },
+        "cpu24": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3264014"
+        },
+        "cpu25": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4120345"
+        },
+        "cpu26": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3298276"
+        },
+        "cpu27": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4126243"
+        },
+        "cpu28": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3755414"
+        },
+        "cpu29": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3288021"
+        },
+        "cpu30": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3527097"
+        },
+        "cpu31": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4159430"
+        }
+      },
+      "boost": "1",
+      "load": [
+        14.6240234375,
+        13.74658203125,
+        15.75830078125
+      ],
+      "pressure": {
+        "cpu": "some avg10=0.00 avg60=4.86 avg300=7.01 total=55262754912\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+        "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2730620499\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2508725649",
+        "io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1837097199\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=722537481"
+      },
+      "other_account_work": false,
+      "other_account_work_count": 0,
+      "count_scope": "non-housekeeping process observations plus non-housekeeping service observations; not a deduplicated workload count"
+    },
+    "group_interval_idle_percent": {
+      "cpu0": 43.343653250774,
+      "cpu1": 22.923076923076923,
+      "cpu2": 81.43074581430746,
+      "cpu3": 80.8868501529052,
+      "cpu4": 76.3719512195122,
+      "cpu5": 82.64840182648402,
+      "cpu6": 60.790273556231,
+      "cpu7": 77.84615384615384,
+      "cpu8": 89.68133535660091,
+      "cpu9": 87.48091603053435,
+      "cpu10": 89.51367781155015,
+      "cpu11": 86.58536585365853,
+      "cpu12": 87.10166919575114,
+      "cpu13": 90.51987767584097,
+      "cpu14": 58.725341426403645,
+      "cpu15": 85.86626139817629,
+      "cpu16": 42.02453987730061,
+      "cpu17": 60.730593607305934,
+      "cpu18": 2.6275115919629055,
+      "cpu19": 0.15479876160990713,
+      "cpu20": 45.6221198156682,
+      "cpu21": 0.15479876160990713,
+      "cpu22": 29.45736434108527,
+      "cpu23": 8.372093023255815,
+      "cpu24": 89.95433789954338,
+      "cpu25": 58.37173579109063,
+      "cpu26": 88.35098335854765,
+      "cpu27": 75.6838905775076,
+      "cpu28": 87.44326777609682,
+      "cpu29": 90.12158054711246,
+      "cpu30": 91.1854103343465,
+      "cpu31": 86.85800604229607
+    }
+  },
+  {
+    "name": "4096-disabled",
+    "count": 4096,
+    "mode": "disabled",
+    "cpu": 14,
+    "pair": "14,30",
+    "start": 1794508992.403684,
+    "end": 1794508996.9173596,
+    "wall": 4.513675652095117,
+    "runner_exit": 0,
+    "before": {
+      "at": 1794508992.4030378,
+      "cpus": {
+        "cpu0": [
+          7431459,
+          9914731,
+          2271254,
+          42455935,
+          63358,
+          244225,
+          171947,
+          0
+        ],
+        "cpu1": [
+          7677026,
+          9590693,
+          2275007,
+          42582970,
+          64207,
+          239754,
+          97669,
+          0
+        ],
+        "cpu2": [
+          6785524,
+          8554346,
+          2149092,
+          44645454,
+          73950,
+          230615,
+          64810,
+          0
+        ],
+        "cpu3": [
+          6954417,
+          8677748,
+          2153015,
+          44345194,
+          74496,
+          230837,
+          47733,
+          0
+        ],
+        "cpu4": [
+          6312955,
+          8171671,
+          2158406,
+          45501392,
+          73914,
+          221966,
+          44166,
+          0
+        ],
+        "cpu5": [
+          7673869,
+          9681692,
+          2439078,
+          42404693,
+          71513,
+          248444,
+          48545,
+          0
+        ],
+        "cpu6": [
+          6427160,
+          8209028,
+          2156186,
+          45383780,
+          75466,
+          225885,
+          39399,
+          0
+        ],
+        "cpu7": [
+          7860262,
+          10092341,
+          2442446,
+          41811681,
+          64751,
+          248547,
+          42340,
+          0
+        ],
+        "cpu8": [
+          5658940,
+          7162745,
+          2365623,
+          46969301,
+          69570,
+          217062,
+          44868,
+          0
+        ],
+        "cpu9": [
+          6533533,
+          8716757,
+          2834603,
+          44152527,
+          68869,
+          239586,
+          51762,
+          0
+        ],
+        "cpu10": [
+          5955251,
+          7705221,
+          2422011,
+          46123412,
+          69672,
+          225839,
+          44511,
+          0
+        ],
+        "cpu11": [
+          6536514,
+          8880533,
+          2666146,
+          44110660,
+          65513,
+          230770,
+          44188,
+          0
+        ],
+        "cpu12": [
+          4332431,
+          9196158,
+          2315358,
+          46325787,
+          75070,
+          220767,
+          48877,
+          0
+        ],
+        "cpu13": [
+          4030902,
+          8486921,
+          2242402,
+          47403275,
+          76142,
+          216492,
+          44839,
+          0
+        ],
+        "cpu14": [
+          3757296,
+          8192706,
+          2265416,
+          47952097,
+          72482,
+          212656,
+          43831,
+          0
+        ],
+        "cpu15": [
+          4191536,
+          9033739,
+          2400817,
+          46520609,
+          78999,
+          220993,
+          43248,
+          0
+        ],
+        "cpu16": [
+          5753126,
+          10776167,
+          1888939,
+          43764758,
+          56790,
+          221089,
+          31636,
+          0
+        ],
+        "cpu17": [
+          6433811,
+          11750443,
+          1911064,
+          42068543,
+          48726,
+          223836,
+          28565,
+          0
+        ],
+        "cpu18": [
+          5175731,
+          10023287,
+          1903900,
+          45058743,
+          67322,
+          216889,
+          30906,
+          0
+        ],
+        "cpu19": [
+          5613320,
+          10857446,
+          1880078,
+          43809207,
+          58771,
+          219327,
+          28902,
+          0
+        ],
+        "cpu20": [
+          4386711,
+          9017930,
+          1952526,
+          46801447,
+          77024,
+          211853,
+          32687,
+          0
+        ],
+        "cpu21": [
+          7523836,
+          13470091,
+          2018183,
+          39140687,
+          38970,
+          233262,
+          26434,
+          0
+        ],
+        "cpu22": [
+          4776664,
+          9673839,
+          1914879,
+          45801062,
+          68682,
+          213998,
+          32056,
+          0
+        ],
+        "cpu23": [
+          7445742,
+          12890538,
+          2015146,
+          39804789,
+          41162,
+          231842,
+          26742,
+          0
+        ],
+        "cpu24": [
+          4324783,
+          8949352,
+          2059021,
+          46845131,
+          65045,
+          209372,
+          35657,
+          0
+        ],
+        "cpu25": [
+          5769249,
+          11196326,
+          2021827,
+          43193617,
+          48162,
+          213878,
+          29758,
+          0
+        ],
+        "cpu26": [
+          4451937,
+          9305981,
+          1974493,
+          46450272,
+          62278,
+          207717,
+          33088,
+          0
+        ],
+        "cpu27": [
+          5140015,
+          10041320,
+          1950163,
+          45054580,
+          51536,
+          207586,
+          30468,
+          0
+        ],
+        "cpu28": [
+          4845814,
+          9892362,
+          2025263,
+          45418746,
+          56969,
+          210983,
+          33735,
+          0
+        ],
+        "cpu29": [
+          4100332,
+          8730820,
+          2115955,
+          47227859,
+          69029,
+          211172,
+          36839,
+          0
+        ],
+        "cpu30": [
+          3810672,
+          8320471,
+          2180983,
+          47864942,
+          69335,
+          206898,
+          38690,
+          0
+        ],
+        "cpu31": [
+          5173880,
+          10823349,
+          1909238,
+          44276493,
+          44071,
+          211396,
+          29434,
+          0
+        ]
+      },
+      "pairs": {
+        "0,16": [
+          0,
+          16
+        ],
+        "1,17": [
+          1,
+          17
+        ],
+        "2,18": [
+          2,
+          18
+        ],
+        "3,19": [
+          3,
+          19
+        ],
+        "4,20": [
+          4,
+          20
+        ],
+        "5,21": [
+          5,
+          21
+        ],
+        "6,22": [
+          6,
+          22
+        ],
+        "7,23": [
+          7,
+          23
+        ],
+        "8,24": [
+          8,
+          24
+        ],
+        "9,25": [
+          9,
+          25
+        ],
+        "10,26": [
+          10,
+          26
+        ],
+        "11,27": [
+          11,
+          27
+        ],
+        "12,28": [
+          12,
+          28
+        ],
+        "13,29": [
+          13,
+          29
+        ],
+        "14,30": [
+          14,
+          30
+        ],
+        "15,31": [
+          15,
+          31
+        ]
+      },
+      "freq": {
+        "cpu0": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu1": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu2": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu3": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu4": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu5": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4391900"
+        },
+        "cpu6": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu7": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4391917"
+        },
+        "cpu8": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu9": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu10": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu11": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu12": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu13": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu14": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu15": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4292125"
+        },
+        "cpu16": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu17": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu18": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu19": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu20": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu21": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu22": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu23": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu24": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu25": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu26": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu27": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu28": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu29": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu30": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu31": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        }
+      },
+      "boost": "1",
+      "load": [
+        10.91357421875,
+        12.95166015625,
+        15.43017578125
+      ],
+      "pressure": {
+        "cpu": "some avg10=0.00 avg60=2.95 avg300=6.32 total=55262765255\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+        "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2730620499\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2508725649",
+        "io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1837097214\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=722537483"
+      },
+      "other_account_work": false,
+      "other_account_work_count": 0,
+      "count_scope": "non-housekeeping process observations plus non-housekeeping service observations; not a deduplicated workload count"
+    },
+    "after": {
+      "at": 1794508996.917084,
+      "cpus": {
+        "cpu0": [
+          7431489,
+          9914731,
+          2271287,
+          42456326,
+          63358,
+          244227,
+          171956,
+          0
+        ],
+        "cpu1": [
+          7677068,
+          9590693,
+          2275043,
+          42583346,
+          64207,
+          239756,
+          97671,
+          0
+        ],
+        "cpu2": [
+          6785548,
+          8554346,
+          2149118,
+          44645862,
+          73950,
+          230617,
+          64811,
+          0
+        ],
+        "cpu3": [
+          6954442,
+          8677749,
+          2153045,
+          44345598,
+          74496,
+          230839,
+          47733,
+          0
+        ],
+        "cpu4": [
+          6312971,
+          8171671,
+          2158425,
+          45501816,
+          73914,
+          221968,
+          44167,
+          0
+        ],
+        "cpu5": [
+          7673878,
+          9681753,
+          2439087,
+          42405069,
+          71513,
+          248445,
+          48545,
+          0
+        ],
+        "cpu6": [
+          6427178,
+          8209028,
+          2156202,
+          45384203,
+          75466,
+          225887,
+          39399,
+          0
+        ],
+        "cpu7": [
+          7860311,
+          10092341,
+          2442456,
+          41812075,
+          64751,
+          248548,
+          42340,
+          0
+        ],
+        "cpu8": [
+          5658960,
+          7162745,
+          2365650,
+          46969712,
+          69570,
+          217064,
+          44868,
+          0
+        ],
+        "cpu9": [
+          6533567,
+          8716758,
+          2834648,
+          44152908,
+          68869,
+          239588,
+          51762,
+          0
+        ],
+        "cpu10": [
+          5955278,
+          7705221,
+          2422043,
+          46123814,
+          69672,
+          225841,
+          44511,
+          0
+        ],
+        "cpu11": [
+          6536543,
+          8880533,
+          2666187,
+          44111051,
+          65513,
+          230773,
+          44189,
+          0
+        ],
+        "cpu12": [
+          4332457,
+          9196158,
+          2315386,
+          46326193,
+          75070,
+          220769,
+          48877,
+          0
+        ],
+        "cpu13": [
+          4030921,
+          8486921,
+          2242425,
+          47403692,
+          76142,
+          216494,
+          44839,
+          0
+        ],
+        "cpu14": [
+          3757315,
+          8192806,
+          2265440,
+          47952413,
+          72482,
+          212658,
+          43831,
+          0
+        ],
+        "cpu15": [
+          4191561,
+          9033739,
+          2400850,
+          46521010,
+          79000,
+          220995,
+          43248,
+          0
+        ],
+        "cpu16": [
+          5753157,
+          10776171,
+          1888966,
+          43765152,
+          56790,
+          221091,
+          31636,
+          0
+        ],
+        "cpu17": [
+          6433851,
+          11750448,
+          1911105,
+          42068919,
+          48726,
+          223838,
+          28565,
+          0
+        ],
+        "cpu18": [
+          5175757,
+          10023287,
+          1903928,
+          45059149,
+          67322,
+          216891,
+          30906,
+          0
+        ],
+        "cpu19": [
+          5613351,
+          10857446,
+          1880110,
+          43809603,
+          58771,
+          219329,
+          28902,
+          0
+        ],
+        "cpu20": [
+          4386733,
+          9017930,
+          1952547,
+          46801865,
+          77024,
+          211855,
+          32688,
+          0
+        ],
+        "cpu21": [
+          7523837,
+          13470470,
+          2018186,
+          39140755,
+          38970,
+          233264,
+          26434,
+          0
+        ],
+        "cpu22": [
+          4776682,
+          9673839,
+          1914899,
+          45801484,
+          68682,
+          214000,
+          32056,
+          0
+        ],
+        "cpu23": [
+          7446016,
+          12890538,
+          2015239,
+          39804872,
+          41162,
+          231843,
+          26742,
+          0
+        ],
+        "cpu24": [
+          4324803,
+          8949352,
+          2059051,
+          46845541,
+          65045,
+          209374,
+          35657,
+          0
+        ],
+        "cpu25": [
+          5769303,
+          11196326,
+          2021875,
+          43193976,
+          48162,
+          213881,
+          29758,
+          0
+        ],
+        "cpu26": [
+          4451962,
+          9305981,
+          1974526,
+          46450676,
+          62278,
+          207720,
+          33088,
+          0
+        ],
+        "cpu27": [
+          5140046,
+          10041320,
+          1950202,
+          45054971,
+          51536,
+          207589,
+          30468,
+          0
+        ],
+        "cpu28": [
+          4845844,
+          9892362,
+          2025296,
+          45419147,
+          56969,
+          210986,
+          33735,
+          0
+        ],
+        "cpu29": [
+          4100355,
+          8730820,
+          2115986,
+          47228267,
+          69029,
+          211174,
+          36839,
+          0
+        ],
+        "cpu30": [
+          3810693,
+          8320471,
+          2181009,
+          47865358,
+          69335,
+          206900,
+          38691,
+          0
+        ],
+        "cpu31": [
+          5173910,
+          10823350,
+          1909272,
+          44276890,
+          44071,
+          211399,
+          29434,
+          0
+        ]
+      },
+      "pairs": {
+        "0,16": [
+          0,
+          16
+        ],
+        "1,17": [
+          1,
+          17
+        ],
+        "2,18": [
+          2,
+          18
+        ],
+        "3,19": [
+          3,
+          19
+        ],
+        "4,20": [
+          4,
+          20
+        ],
+        "5,21": [
+          5,
+          21
+        ],
+        "6,22": [
+          6,
+          22
+        ],
+        "7,23": [
+          7,
+          23
+        ],
+        "8,24": [
+          8,
+          24
+        ],
+        "9,25": [
+          9,
+          25
+        ],
+        "10,26": [
+          10,
+          26
+        ],
+        "11,27": [
+          11,
+          27
+        ],
+        "12,28": [
+          12,
+          28
+        ],
+        "13,29": [
+          13,
+          29
+        ],
+        "14,30": [
+          14,
+          30
+        ],
+        "15,31": [
+          15,
+          31
+        ]
+      },
+      "freq": {
+        "cpu0": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3496163"
+        },
+        "cpu1": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3512453"
+        },
+        "cpu2": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3507232"
+        },
+        "cpu3": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3512527"
+        },
+        "cpu4": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3512022"
+        },
+        "cpu5": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4370621"
+        },
+        "cpu6": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3494201"
+        },
+        "cpu7": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4359086"
+        },
+        "cpu8": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3433058"
+        },
+        "cpu9": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4278071"
+        },
+        "cpu10": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3433482"
+        },
+        "cpu11": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4293873"
+        },
+        "cpu12": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3475134"
+        },
+        "cpu13": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3492808"
+        },
+        "cpu14": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3469868"
+        },
+        "cpu15": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3493471"
+        },
+        "cpu16": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3498380"
+        },
+        "cpu17": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3494322"
+        },
+        "cpu18": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3487986"
+        },
+        "cpu19": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3489776"
+        },
+        "cpu20": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3486581"
+        },
+        "cpu21": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4391236"
+        },
+        "cpu22": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3483283"
+        },
+        "cpu23": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4367059"
+        },
+        "cpu24": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3496308"
+        },
+        "cpu25": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3491597"
+        },
+        "cpu26": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3487932"
+        },
+        "cpu27": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4366946"
+        },
+        "cpu28": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3492877"
+        },
+        "cpu29": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3512787"
+        },
+        "cpu30": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3513009"
+        },
+        "cpu31": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4387890"
+        }
+      },
+      "boost": "1",
+      "load": [
+        10.27978515625,
+        12.7861328125,
+        15.36328125
+      ],
+      "pressure": {
+        "cpu": "some avg10=0.00 avg60=2.76 avg300=6.24 total=55262782139\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+        "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2730620499\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2508725649",
+        "io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1837097234\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=722537502"
+      },
+      "other_account_work": false,
+      "other_account_work_count": 0,
+      "count_scope": "non-housekeeping process observations plus non-housekeeping service observations; not a deduplicated workload count"
+    },
+    "group_interval_idle_percent": {
+      "cpu0": 84.08602150537635,
+      "cpu1": 82.09606986899563,
+      "cpu2": 88.50325379609545,
+      "cpu3": 87.44588744588745,
+      "cpu4": 91.77489177489177,
+      "cpu5": 82.45614035087719,
+      "cpu6": 92.15686274509804,
+      "cpu7": 86.78414096916299,
+      "cpu8": 89.34782608695652,
+      "cpu9": 82.28941684665227,
+      "cpu10": 86.82505399568035,
+      "cpu11": 84.08602150537635,
+      "cpu12": 87.87878787878788,
+      "cpu13": 90.45553145336225,
+      "cpu14": 68.54663774403471,
+      "cpu15": 86.7965367965368,
+      "cpu16": 86.02620087336244,
+      "cpu17": 81.03448275862068,
+      "cpu18": 87.87878787878788,
+      "cpu19": 85.90021691973969,
+      "cpu20": 90.08620689655173,
+      "cpu21": 15.01103752759382,
+      "cpu22": 91.34199134199135,
+      "cpu23": 18.403547671840354,
+      "cpu24": 88.74458874458874,
+      "cpu25": 77.37068965517241,
+      "cpu26": 86.88172043010752,
+      "cpu27": 84.26724137931035,
+      "cpu28": 85.86723768736617,
+      "cpu29": 87.93103448275862,
+      "cpu30": 89.27038626609442,
+      "cpu31": 85.3763440860215
+    }
+  },
+  {
+    "name": "4096-enabled",
+    "count": 4096,
+    "mode": "enabled",
+    "cpu": 14,
+    "pair": "14,30",
+    "start": 1794509026.968868,
+    "end": 1794509032.6141083,
+    "wall": 5.645239959005266,
+    "runner_exit": 0,
+    "before": {
+      "at": 1794509026.9682791,
+      "cpus": {
+        "cpu0": [
+          7431495,
+          9914741,
+          2271308,
+          42459277,
+          63359,
+          244229,
+          171977,
+          0
+        ],
+        "cpu1": [
+          7677080,
+          9590869,
+          2275083,
+          42586121,
+          64208,
+          239758,
+          97673,
+          0
+        ],
+        "cpu2": [
+          6785549,
+          8554350,
+          2149127,
+          44648855,
+          73950,
+          230618,
+          64811,
+          0
+        ],
+        "cpu3": [
+          6954442,
+          8677752,
+          2153051,
+          44348594,
+          74496,
+          230840,
+          47734,
+          0
+        ],
+        "cpu4": [
+          6312971,
+          8171673,
+          2158432,
+          45504812,
+          73914,
+          221968,
+          44167,
+          0
+        ],
+        "cpu5": [
+          7674039,
+          9682849,
+          2439557,
+          42406339,
+          71513,
+          248453,
+          48545,
+          0
+        ],
+        "cpu6": [
+          6427178,
+          8209030,
+          2156207,
+          45387201,
+          75467,
+          225888,
+          39399,
+          0
+        ],
+        "cpu7": [
+          7860929,
+          10092347,
+          2442651,
+          41814257,
+          64752,
+          248551,
+          42340,
+          0
+        ],
+        "cpu8": [
+          5658961,
+          7162748,
+          2365655,
+          46972710,
+          69570,
+          217064,
+          44868,
+          0
+        ],
+        "cpu9": [
+          6533580,
+          8716770,
+          2834684,
+          44155852,
+          68869,
+          239589,
+          51763,
+          0
+        ],
+        "cpu10": [
+          5955279,
+          7705224,
+          2422049,
+          46126810,
+          69672,
+          225842,
+          44511,
+          0
+        ],
+        "cpu11": [
+          6536544,
+          8880538,
+          2666196,
+          44114042,
+          65513,
+          230773,
+          44189,
+          0
+        ],
+        "cpu12": [
+          4332459,
+          9196162,
+          2315393,
+          46329187,
+          75070,
+          220770,
+          48878,
+          0
+        ],
+        "cpu13": [
+          4030921,
+          8486924,
+          2242430,
+          47406690,
+          76142,
+          216494,
+          44840,
+          0
+        ],
+        "cpu14": [
+          3757316,
+          8192809,
+          2265446,
+          47955410,
+          72482,
+          212659,
+          43831,
+          0
+        ],
+        "cpu15": [
+          4191564,
+          9033741,
+          2400862,
+          46523999,
+          79000,
+          220996,
+          43248,
+          0
+        ],
+        "cpu16": [
+          5753158,
+          10776173,
+          1888976,
+          43768145,
+          56791,
+          221092,
+          31636,
+          0
+        ],
+        "cpu17": [
+          6433851,
+          11750460,
+          1911113,
+          42071903,
+          48726,
+          223839,
+          28565,
+          0
+        ],
+        "cpu18": [
+          5175757,
+          10023289,
+          1903936,
+          45062144,
+          67323,
+          216892,
+          30906,
+          0
+        ],
+        "cpu19": [
+          5613351,
+          10857448,
+          1880120,
+          43812595,
+          58773,
+          219330,
+          28902,
+          0
+        ],
+        "cpu20": [
+          4386733,
+          9017932,
+          1952551,
+          46804864,
+          77024,
+          211855,
+          32688,
+          0
+        ],
+        "cpu21": [
+          7523837,
+          13471353,
+          2018476,
+          39142583,
+          38970,
+          233270,
+          26434,
+          0
+        ],
+        "cpu22": [
+          4776682,
+          9673842,
+          1914905,
+          45804483,
+          68683,
+          214001,
+          32056,
+          0
+        ],
+        "cpu23": [
+          7447490,
+          12890712,
+          2015683,
+          39805778,
+          41162,
+          231852,
+          26743,
+          0
+        ],
+        "cpu24": [
+          4324805,
+          8949356,
+          2059058,
+          46848536,
+          65045,
+          209375,
+          35657,
+          0
+        ],
+        "cpu25": [
+          5769321,
+          11196329,
+          2021886,
+          43196951,
+          48162,
+          213882,
+          29758,
+          0
+        ],
+        "cpu26": [
+          4451963,
+          9305984,
+          1974530,
+          46453675,
+          62278,
+          207720,
+          33088,
+          0
+        ],
+        "cpu27": [
+          5140049,
+          10041322,
+          1950211,
+          45057963,
+          51536,
+          207589,
+          30468,
+          0
+        ],
+        "cpu28": [
+          4845845,
+          9892365,
+          2025301,
+          45422145,
+          56969,
+          210987,
+          33735,
+          0
+        ],
+        "cpu29": [
+          4100357,
+          8730823,
+          2115992,
+          47231264,
+          69029,
+          211175,
+          36839,
+          0
+        ],
+        "cpu30": [
+          3810693,
+          8320474,
+          2181013,
+          47868358,
+          69335,
+          206901,
+          38691,
+          0
+        ],
+        "cpu31": [
+          5173910,
+          10823353,
+          1909277,
+          44279888,
+          44071,
+          211399,
+          29435,
+          0
+        ]
+      },
+      "pairs": {
+        "0,16": [
+          0,
+          16
+        ],
+        "1,17": [
+          1,
+          17
+        ],
+        "2,18": [
+          2,
+          18
+        ],
+        "3,19": [
+          3,
+          19
+        ],
+        "4,20": [
+          4,
+          20
+        ],
+        "5,21": [
+          5,
+          21
+        ],
+        "6,22": [
+          6,
+          22
+        ],
+        "7,23": [
+          7,
+          23
+        ],
+        "8,24": [
+          8,
+          24
+        ],
+        "9,25": [
+          9,
+          25
+        ],
+        "10,26": [
+          10,
+          26
+        ],
+        "11,27": [
+          11,
+          27
+        ],
+        "12,28": [
+          12,
+          28
+        ],
+        "13,29": [
+          13,
+          29
+        ],
+        "14,30": [
+          14,
+          30
+        ],
+        "15,31": [
+          15,
+          31
+        ]
+      },
+      "freq": {
+        "cpu0": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3551416"
+        },
+        "cpu1": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu2": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu3": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu4": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu5": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu6": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu7": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu8": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu9": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu10": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu11": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu12": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu13": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu14": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu15": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu16": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu17": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu18": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu19": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu20": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu21": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4416135"
+        },
+        "cpu22": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu23": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4416125"
+        },
+        "cpu24": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu25": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu26": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu27": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4293673"
+        },
+        "cpu28": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu29": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu30": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu31": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        }
+      },
+      "boost": "1",
+      "load": [
+        7.15380859375,
+        11.7861328125,
+        14.94775390625
+      ],
+      "pressure": {
+        "cpu": "some avg10=0.00 avg60=1.67 avg300=5.62 total=55262807321\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+        "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2730620499\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2508725649",
+        "io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1837099552\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=722539753"
+      },
+      "other_account_work": false,
+      "other_account_work_count": 0,
+      "count_scope": "non-housekeeping process observations plus non-housekeeping service observations; not a deduplicated workload count"
+    },
+    "after": {
+      "at": 1794509032.6138775,
+      "cpus": {
+        "cpu0": [
+          7431522,
+          9914742,
+          2271338,
+          42459786,
+          63359,
+          244231,
+          171985,
+          0
+        ],
+        "cpu1": [
+          7677116,
+          9590870,
+          2275124,
+          42586613,
+          64208,
+          239761,
+          97675,
+          0
+        ],
+        "cpu2": [
+          6785570,
+          8554350,
+          2149154,
+          44649377,
+          73950,
+          230619,
+          64812,
+          0
+        ],
+        "cpu3": [
+          6954467,
+          8677752,
+          2153080,
+          44349114,
+          74496,
+          230842,
+          47734,
+          0
+        ],
+        "cpu4": [
+          6312988,
+          8171673,
+          2158452,
+          45505348,
+          73914,
+          221969,
+          44167,
+          0
+        ],
+        "cpu5": [
+          7674179,
+          9682862,
+          2439645,
+          42406666,
+          71513,
+          248454,
+          48546,
+          0
+        ],
+        "cpu6": [
+          6427197,
+          8209030,
+          2156227,
+          45387733,
+          75467,
+          225889,
+          39399,
+          0
+        ],
+        "cpu7": [
+          7860988,
+          10092363,
+          2442675,
+          41814726,
+          64752,
+          248552,
+          42340,
+          0
+        ],
+        "cpu8": [
+          5658979,
+          7162748,
+          2365680,
+          46973241,
+          69570,
+          217066,
+          44868,
+          0
+        ],
+        "cpu9": [
+          6533620,
+          8716772,
+          2834727,
+          44156340,
+          68869,
+          239592,
+          51763,
+          0
+        ],
+        "cpu10": [
+          5955301,
+          7705224,
+          2422078,
+          46127335,
+          69672,
+          225844,
+          44511,
+          0
+        ],
+        "cpu11": [
+          6536576,
+          8880538,
+          2666232,
+          44114549,
+          65513,
+          230776,
+          44189,
+          0
+        ],
+        "cpu12": [
+          4332482,
+          9196162,
+          2315419,
+          46329711,
+          75070,
+          220772,
+          48878,
+          0
+        ],
+        "cpu13": [
+          4030944,
+          8486924,
+          2242458,
+          47407215,
+          76142,
+          216496,
+          44840,
+          0
+        ],
+        "cpu14": [
+          3757331,
+          8193032,
+          2265470,
+          47955720,
+          72482,
+          212661,
+          43831,
+          0
+        ],
+        "cpu15": [
+          4191592,
+          9033741,
+          2400888,
+          46524516,
+          79000,
+          220998,
+          43248,
+          0
+        ],
+        "cpu16": [
+          5753183,
+          10776173,
+          1889006,
+          43768663,
+          56791,
+          221094,
+          31636,
+          0
+        ],
+        "cpu17": [
+          6433882,
+          11750463,
+          1911158,
+          42072397,
+          48726,
+          223842,
+          28565,
+          0
+        ],
+        "cpu18": [
+          5175781,
+          10023289,
+          1903966,
+          45062664,
+          67323,
+          216894,
+          30906,
+          0
+        ],
+        "cpu19": [
+          5613381,
+          10857448,
+          1880155,
+          43813105,
+          58773,
+          219333,
+          28903,
+          0
+        ],
+        "cpu20": [
+          4386749,
+          9017933,
+          1952572,
+          46805399,
+          77024,
+          211857,
+          32688,
+          0
+        ],
+        "cpu21": [
+          7523964,
+          13471437,
+          2018584,
+          39142828,
+          38970,
+          233272,
+          26435,
+          0
+        ],
+        "cpu22": [
+          4776699,
+          9673842,
+          1914924,
+          45805020,
+          68683,
+          214002,
+          32056,
+          0
+        ],
+        "cpu23": [
+          7447596,
+          12890975,
+          2015780,
+          39805873,
+          41162,
+          231854,
+          26743,
+          0
+        ],
+        "cpu24": [
+          4324826,
+          8949356,
+          2059087,
+          46849060,
+          65045,
+          209377,
+          35657,
+          0
+        ],
+        "cpu25": [
+          5769352,
+          11196329,
+          2021918,
+          43197465,
+          48162,
+          213884,
+          29758,
+          0
+        ],
+        "cpu26": [
+          4451986,
+          9305984,
+          1974559,
+          46454196,
+          62278,
+          207722,
+          33088,
+          0
+        ],
+        "cpu27": [
+          5140080,
+          10041322,
+          1950253,
+          45058468,
+          51536,
+          207592,
+          30468,
+          0
+        ],
+        "cpu28": [
+          4845868,
+          9892365,
+          2025329,
+          45422668,
+          56969,
+          210989,
+          33735,
+          0
+        ],
+        "cpu29": [
+          4100376,
+          8730823,
+          2116015,
+          47231793,
+          69029,
+          211177,
+          36839,
+          0
+        ],
+        "cpu30": [
+          3810712,
+          8320474,
+          2181038,
+          47868887,
+          69335,
+          206903,
+          38691,
+          0
+        ],
+        "cpu31": [
+          5173938,
+          10823353,
+          1909309,
+          44280403,
+          44071,
+          211402,
+          29435,
+          0
+        ]
+      },
+      "pairs": {
+        "0,16": [
+          0,
+          16
+        ],
+        "1,17": [
+          1,
+          17
+        ],
+        "2,18": [
+          2,
+          18
+        ],
+        "3,19": [
+          3,
+          19
+        ],
+        "4,20": [
+          4,
+          20
+        ],
+        "5,21": [
+          5,
+          21
+        ],
+        "6,22": [
+          6,
+          22
+        ],
+        "7,23": [
+          7,
+          23
+        ],
+        "8,24": [
+          8,
+          24
+        ],
+        "9,25": [
+          9,
+          25
+        ],
+        "10,26": [
+          10,
+          26
+        ],
+        "11,27": [
+          11,
+          27
+        ],
+        "12,28": [
+          12,
+          28
+        ],
+        "13,29": [
+          13,
+          29
+        ],
+        "14,30": [
+          14,
+          30
+        ],
+        "15,31": [
+          15,
+          31
+        ]
+      },
+      "freq": {
+        "cpu0": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3541568"
+        },
+        "cpu1": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4459688"
+        },
+        "cpu2": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3547952"
+        },
+        "cpu3": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3551370"
+        },
+        "cpu4": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3553860"
+        },
+        "cpu5": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4441880"
+        },
+        "cpu6": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3550922"
+        },
+        "cpu7": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4440140"
+        },
+        "cpu8": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3552206"
+        },
+        "cpu9": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3552468"
+        },
+        "cpu10": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3448874"
+        },
+        "cpu11": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "1746460"
+        },
+        "cpu12": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3550136"
+        },
+        "cpu13": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3825456"
+        },
+        "cpu14": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3545480"
+        },
+        "cpu15": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3552177"
+        },
+        "cpu16": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3573572"
+        },
+        "cpu17": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3572577"
+        },
+        "cpu18": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3573155"
+        },
+        "cpu19": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3572281"
+        },
+        "cpu20": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3560055"
+        },
+        "cpu21": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4454040"
+        },
+        "cpu22": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3569624"
+        },
+        "cpu23": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4466810"
+        },
+        "cpu24": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3572577"
+        },
+        "cpu25": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3565094"
+        },
+        "cpu26": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3565531"
+        },
+        "cpu27": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "4466710"
+        },
+        "cpu28": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3571292"
+        },
+        "cpu29": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3553761"
+        },
+        "cpu30": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3571833"
+        },
+        "cpu31": {
+          "scaling_driver": "amd-pstate-epp",
+          "scaling_governor": "powersave",
+          "energy_performance_preference": "balance_performance",
+          "scaling_min_freq": "1746460",
+          "scaling_max_freq": "5086181",
+          "scaling_cur_freq": "3566446"
+        }
+      },
+      "boost": "1",
+      "load": [
+        6.82080078125,
+        11.64013671875,
+        14.88330078125
+      ],
+      "pressure": {
+        "cpu": "some avg10=0.00 avg60=1.51 avg300=5.51 total=55262825579\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+        "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2730620499\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2508725649",
+        "io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1837099582\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=722539782"
+      },
+      "other_account_work": false,
+      "other_account_work_count": 0,
+      "count_scope": "non-housekeeping process observations plus non-housekeeping service observations; not a deduplicated workload count"
+    },
+    "group_interval_idle_percent": {
+      "cpu0": 88.21490467937609,
+      "cpu1": 85.56521739130434,
+      "cpu2": 91.25874125874125,
+      "cpu3": 90.27777777777777,
+      "cpu4": 93.37979094076655,
+      "cpu5": 57.36842105263158,
+      "cpu6": 93.00699300699301,
+      "cpu7": 82.42530755711775,
+      "cpu8": 92.1875,
+      "cpu9": 84.72222222222223,
+      "cpu10": 90.83044982698962,
+      "cpu11": 87.71626297577855,
+      "cpu12": 91.1304347826087,
+      "cpu13": 90.83044982698962,
+      "cpu14": 54.00696864111498,
+      "cpu15": 90.22687609075044,
+      "cpu16": 90.08695652173913,
+      "cpu17": 85.76388888888889,
+      "cpu18": 90.27777777777777,
+      "cpu19": 88.08290155440415,
+      "cpu20": 93.04347826086956,
+      "cpu21": 43.20987654320987,
+      "cpu22": 93.55400696864112,
+      "cpu23": 16.873889875666073,
+      "cpu24": 90.97222222222223,
+      "cpu25": 88.77374784110535,
+      "cpu26": 90.6086956521739,
+      "cpu27": 86.91910499139415,
+      "cpu28": 90.79861111111111,
+      "cpu29": 92.32111692844677,
+      "cpu30": 92.0,
+      "cpu31": 89.10034602076125
+    }
+  }
+]
