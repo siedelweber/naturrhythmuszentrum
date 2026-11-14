@@ -21,6 +21,7 @@ impl Member<'_> {
     pub(in crate::loan::application) const fn zeros<P: Scalar>(self) -> Values<P> {
         match self {
             Self::Transform(_)
+            | Self::ProjectedAffine(_)
             | Self::ProjectedElementwise(..)
             | Self::Square(_)
             | Self::Reciprocal(_)
@@ -48,7 +49,7 @@ impl Member<'_> {
     ) -> Result<Values<P>, CellOutcome> {
         let cell = cells[0];
         match self {
-            Self::Transform(_) | Self::ProjectedElementwise(..) => {
+            Self::Transform(_) | Self::ProjectedAffine(_) | Self::ProjectedElementwise(..) => {
                 Err(self.storage_failure(component))
             }
             Self::Square(_) | Self::Reciprocal(_) | Self::SquareRoot(_) => {
@@ -73,6 +74,7 @@ impl Member<'_> {
                         .entered(),
                     ),
                     Self::Transform(_)
+                    | Self::ProjectedAffine(_)
                     | Self::ProjectedElementwise(..)
                     | Self::Square(_)
                     | Self::PreparedExpm1(..)

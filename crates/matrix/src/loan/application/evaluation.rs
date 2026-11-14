@@ -92,7 +92,8 @@ fn traversal_work<P: Scalar>(
     member: Member<'_>,
 ) -> Result<usize, LoanError> {
     let components = core.host.declaration.extent.columns();
-    let inherited_error = member.is_transform() && core.evidence.source.symbols.error().is_some();
+    let inherited_error = (member.is_transform() || matches!(member, Member::ProjectedAffine(_)))
+        && core.evidence.source.symbols.error().is_some();
     let loads = 1
         + usize::from(inherited_error)
         + usize::from(core.evidence.source.symbols.bound().is_some())
@@ -118,7 +119,9 @@ fn traversal_work<P: Scalar>(
     core.population
         .checked_mul(per_cell)
         .and_then(|steps| {
-            steps.checked_add(if member.is_projected() {
+            steps.checked_add(if matches!(member, Member::ProjectedAffine(_)) {
+                4
+            } else if member.is_projected() {
                 3
             } else if member.cartesian().is_some() {
                 6
@@ -191,6 +194,7 @@ fn run<P: Scalar + 'static>(
         .and_then(|side| side.input.as_ref())
         .and_then(|pin| pin.checked_reader::<P>().ok());
     let right_copy = copy::bind(right.as_ref(), member.cartesian().is_some())?;
+    let affine = affine::<P>(member, &permit.context)?;
     let product = member.cartesian();
     for word_index in 0..core.filled.len() {
         let mut remaining = core.filled[word_index];
@@ -211,7 +215,7 @@ fn run<P: Scalar + 'static>(
                 let result = if let (Some(left), Some(right)) = (&copy, &right_copy) {
                     copy::binary(member, left, right, source_cells, component, entry, permit)
                 } else if let Some(copy) = &copy {
-                    copy.evaluate(member, original, component, entry, permit)
+                    copy.evaluate(member, affine, original, component, entry, permit)
                 } else {
                     member.scalar(
                         reader.as_ref(),
@@ -268,4 +272,21 @@ fn store_result<P: Scalar + 'static>(
     if values.store(channels, endpoints, entry) && first.is_none() {
         *first = Some(member.storage_failure(component));
     }
+}
+
+/// Bind the immutable native coefficient owner once before traversing any selected cell.
+fn affine<'a, P: Scalar + 'static>(
+    member: Member<'a>,
+    context: &ArithmeticContext,
+) -> Result<Option<&'a crate::kernels::affine::Owner<P>>, LoanError> {
+    let crate::kernels::contract::Recipe::ProjectedAffine(affine) = &member.law().recipe else {
+        return Ok(None);
+    };
+    let _span =
+        tracing::trace_span!("nrz.kernel", family = "affine tile binding", work = 1_u64).entered();
+    affine
+        .prelude
+        .bind(context)
+        .map(Some)
+        .map_err(|_| LoanError::UnsupportedContract)
 }

@@ -80,6 +80,7 @@ pub(crate) fn map<P: Scalar + 'static>(
             Recipe::Product
             | Recipe::Elementwise(_)
             | Recipe::ProjectedElementwise(..)
+            | Recipe::ProjectedAffine(..)
             | Recipe::PositiveReciprocal(_)
             | Recipe::PreparedExpm1
             | Recipe::BinaryElementwise(_)

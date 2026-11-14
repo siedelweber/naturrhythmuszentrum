@@ -11,6 +11,8 @@
 //!
 //! Every kernel runs through `Binding`, normalized borrowed views, private candidates and atomic publication. Output reservations use the actual result extent. `RecipeEvidence::Kernel` exposes the closed `KernelKind`, precision, arithmetic revision and conservative admitted work count. Limits include numerical verification and complete output payloads. Only the private evaluator creates kernel evidence. Publication checks its recipe identity, all source dependencies, complete companion inventories and target versions. A multi-input result records every parent; a change to either operand invalidates downstream claims. `OperationRecord::target_map` refuses a multi-input output because it has no single source/destination pair; the operation record and provenance retain the complete relation.
 
+pub(crate) mod affine;
+pub use affine::AffinePrelude;
 pub(crate) mod arithmetic;
 mod backend_product;
 pub(crate) mod binary;

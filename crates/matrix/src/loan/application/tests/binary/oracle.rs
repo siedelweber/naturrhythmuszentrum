@@ -8,14 +8,26 @@ use std::cmp::Ordering;
 
 /// Exact unreduced signed fraction, kept separate from production scalar and CAS code.
 #[derive(Clone)]
-pub(super) struct Rational {
+pub(in crate::loan) struct Rational {
     negative: bool,
     numerator: Natural,
     denominator: Natural,
 }
 impl Rational {
+    /// Construct a literal exact fraction for shared affine and binary image oracles.
+    pub(in crate::loan) fn fraction(numerator: i64, denominator: u64) -> TestResult<Self> {
+        if denominator == 0 {
+            return Err("oracle zero denominator".into());
+        }
+        Ok(Self {
+            negative: numerator < 0,
+            numerator: Natural::new(numerator.unsigned_abs()),
+            denominator: Natural::new(denominator),
+        })
+    }
+
     /// Decode sign, significand and exponent from binary64 bits.
-    pub(super) fn binary(value: f64) -> TestResult<Self> {
+    pub(in crate::loan) fn binary(value: f64) -> TestResult<Self> {
         let (negative, significand, exponent) = decode(value)?;
         let mut numerator = Natural::new(significand);
         let mut denominator = Natural::new(1);
@@ -31,7 +43,7 @@ impl Rational {
         })
     }
     /// Signed addition uses exact cross products; no reduction or budget is needed.
-    pub(super) fn add(&self, other: &Self) -> Self {
+    pub(in crate::loan) fn add(&self, other: &Self) -> Self {
         let left = self.numerator.mul(&other.denominator);
         let right = other.numerator.mul(&self.denominator);
         let (negative, numerator) = if self.negative == other.negative {
@@ -48,13 +60,17 @@ impl Rational {
         }
     }
     /// Exact subtraction retains canonical sign for zero.
-    pub(super) fn sub(&self, other: &Self) -> Self {
+    pub(in crate::loan) fn sub(&self, other: &Self) -> Self {
         let mut opposite = other.clone();
         opposite.negative = !opposite.negative && !opposite.numerator.is_zero();
         self.add(&opposite)
     }
     /// Ordered rational images directly multiply or divide the two exact operands.
-    pub(super) fn image(&self, other: &Self, function: BinaryElementwise) -> TestResult<Self> {
+    pub(in crate::loan) fn image(
+        &self,
+        other: &Self,
+        function: BinaryElementwise,
+    ) -> TestResult<Self> {
         let (numerator, denominator) = match function {
             BinaryElementwise::Product => (
                 self.numerator.mul(&other.numerator),
@@ -77,7 +93,7 @@ impl Rational {
         })
     }
     /// Cross-multiplied numerators prove containment without rounded endpoint arithmetic.
-    pub(super) fn compare(&self, other: &Self) -> Ordering {
+    pub(in crate::loan) fn compare(&self, other: &Self) -> Ordering {
         if self.negative != other.negative {
             return other.negative.cmp(&self.negative);
         }

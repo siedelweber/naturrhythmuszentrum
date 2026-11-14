@@ -13,12 +13,14 @@ use tracing::{
 /// Each observation uses one synchronous dispatcher.
 static DISPATCHERS: Mutex<()> = Mutex::new(());
 
-/// Record only operation fields from Work spans.
+/// Record Work operations and the affine tile-binding family.
 #[derive(Default)]
 struct Operations(Vec<String>);
 impl Visit for Operations {
     fn record_str(&mut self, field: &Field, value: &str) {
-        if field.name() == "operation" {
+        if field.name() == "operation"
+            || (field.name() == "family" && value == "affine tile binding")
+        {
             self.0.push(value.to_owned());
         }
     }
@@ -29,7 +31,7 @@ impl Visit for Operations {
 struct Observer(Arc<Mutex<Operations>>);
 impl Subscriber for Observer {
     fn enabled(&self, metadata: &Metadata<'_>) -> bool {
-        metadata.target() == "nrz::work"
+        metadata.target() == "nrz::work" || metadata.name() == "nrz.kernel"
     }
     fn new_span(&self, attributes: &Attributes<'_>) -> Id {
         let mut operations = self
@@ -82,5 +84,103 @@ fn loan_projected_unary_work_phases() -> TestResult {
         assert_eq!(operations.0, ["pointwise evaluation", phase]);
         drop(owner);
     }
+    Ok(())
+}
+
+/// The affine traversal attributes its complete literal 115-unit inventory to evaluation.
+/// ´test:unit:loan-projected-affine-work-phases´
+#[test]
+fn loan_projected_affine_work_phases() -> TestResult {
+    let _guard = DISPATCHERS
+        .lock()
+        .unwrap_or_else(std::sync::PoisonError::into_inner);
+    let Setup {
+        mut heap,
+        mut account,
+        mut request,
+        ..
+    } = super::super::setup::<f64>()?;
+    let prelude = super::affine::prelude::<f64>(1, &mut account.ledger)?;
+    super::affine::operation(&mut request, &prelude)?;
+    let admission = Arc::new(Mutex::new(Operations::default()));
+    let result = tracing::subscriber::with_default(Observer(Arc::clone(&admission)), || {
+        heap.request_projected_affine(request, &mut account)
+    });
+    assert!(
+        admission
+            .lock()
+            .unwrap_or_else(std::sync::PoisonError::into_inner)
+            .0
+            .iter()
+            .any(|phase| phase == "affine prelude retention")
+    );
+    let owner = match result {
+        ApplicationRequest::ApplicationReady(owner) => owner,
+        other @ ApplicationRequest::ApplicationRefused(..) => {
+            return Err(format!("{other:?}").into());
+        }
+    };
+    let operations = Arc::new(Mutex::new(Operations::default()));
+    let before = account.usage().work;
+    let owner = tracing::subscriber::with_default(Observer(Arc::clone(&operations)), || {
+        candidate(owner, &mut account)
+    })?;
+    assert_eq!(account.usage().work - before, 115);
+    let operations = operations
+        .lock()
+        .unwrap_or_else(std::sync::PoisonError::into_inner);
+    assert_eq!(
+        operations.0,
+        [
+            "pointwise evaluation",
+            "projected affine traversal",
+            "affine tile binding"
+        ]
+    );
+    drop(owner);
+    Ok(())
+}
+
+/// Exact export and numerical coefficient preparation report distinct cumulative Work phases.
+/// ´test:unit:loan-affine-prelude-work-phases´
+#[test]
+fn loan_affine_prelude_work_phases() -> TestResult {
+    let _guard = DISPATCHERS
+        .lock()
+        .unwrap_or_else(std::sync::PoisonError::into_inner);
+    let context = nrz_scalar::ArithmeticContext::new()?;
+    let mut budget = nrz_bindings::Budget::new(nrz_bindings::Limits::default())?;
+    let circle = super::affine::circle::<f64>(&context, &mut budget)?;
+    let definitions = super::affine::definitions(0)?;
+    let operations = Arc::new(Mutex::new(Operations::default()));
+    let before = budget.usage().work;
+    let _prelude = tracing::subscriber::with_default(Observer(Arc::clone(&operations)), || {
+        crate::AffinePrelude::new(
+            definitions,
+            &circle,
+            &nrz_bindings::LimitsOverride {
+                staged_payload_bytes: Some(65_536),
+                output_bytes: Some(16_384),
+                ..nrz_bindings::LimitsOverride::default()
+            },
+            nrz_scalar::LiteralLimits::default(),
+            &context,
+            &mut budget,
+        )
+    })?;
+    assert_eq!(budget.usage().work - before, 156);
+    let operations = operations
+        .lock()
+        .unwrap_or_else(std::sync::PoisonError::into_inner);
+    assert_eq!(
+        operations.0,
+        [
+            "coefficient owner admission",
+            "exact coefficient export",
+            "native coefficient lowering",
+            "exact coefficient export",
+            "native coefficient lowering"
+        ]
+    );
     Ok(())
 }

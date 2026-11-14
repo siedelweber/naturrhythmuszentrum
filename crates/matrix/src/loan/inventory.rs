@@ -67,7 +67,8 @@ impl Heap {
                             AllocationKind::Pin => &mut result.pin_bytes,
                             AllocationKind::Filled => &mut result.filled_bytes,
                             AllocationKind::PreparedOwner { .. }
-                            | AllocationKind::PreparedUse(_) => return Err(LoanError::WrongLoan),
+                            | AllocationKind::PreparedUse(_)
+                            | AllocationKind::Constant(_) => return Err(LoanError::WrongLoan),
                         };
                         *total = total
                             .checked_add(debit.bytes)

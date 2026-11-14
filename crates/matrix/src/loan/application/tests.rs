@@ -2,7 +2,7 @@
 //! Independent masked numerical, resource and ownership controls.
 
 mod authority;
-mod binary;
+pub(in crate::loan) mod binary;
 mod bytes;
 mod chain_format;
 pub(in crate::loan::application) mod expm1;

@@ -261,7 +261,8 @@ impl CheckedOperation {
                 Recipe::PreparedExpm1
                 | Recipe::BinaryElementwise(_)
                 | Recipe::CartesianBinary(..)
-                | Recipe::ProjectedElementwise(..) => false,
+                | Recipe::ProjectedElementwise(..)
+                | Recipe::ProjectedAffine(..) => false,
                 Recipe::Quantity(_) => matches!(
                     contract.kind(),
                     crate::KernelKind::ScalarQuantityProduct

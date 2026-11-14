@@ -69,6 +69,7 @@ impl<'a, P: Scalar + 'static> BoundCopy<'a, P> {
     pub(super) fn evaluate(
         &self,
         member: super::Member<'_>,
+        affine: Option<&crate::kernels::affine::Owner<P>>,
         cell: usize,
         component: usize,
         entry: usize,
@@ -79,6 +80,18 @@ impl<'a, P: Scalar + 'static> BoundCopy<'a, P> {
                 .component(cell, component, permit)
                 .map(super::selected::Values::Closed)
                 .map_err(|_| member.storage_failure(component));
+        }
+        if matches!(member, super::Member::ProjectedAffine(_)) {
+            let values = self
+                .component(cell, component, permit)
+                .map_err(|_| member.storage_failure(component))?;
+            return affine
+                .ok_or_else(|| member.storage_failure(component))?
+                .evaluate(values, &permit.context)
+                .map(|value| {
+                    super::selected::Values::Closed([value.center, value.total, value.error])
+                })
+                .map_err(|reason| super::CellOutcome::CellRefused { component, reason });
         }
         let super::Member::ProjectedElementwise(_, function) = member else {
             return Err(member.storage_failure(component));

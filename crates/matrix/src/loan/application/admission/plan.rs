@@ -37,6 +37,8 @@ pub(super) struct Plan {
     pub(super) identities: [u64; 26],
     /// Complete admitted scope, account and storage epoch.
     pub(super) permit: ResourcePermit,
+    /// Newly adopted fixed numerical owners; repeated shared owners have no second debit.
+    pub(super) constants: [Option<crate::kernels::affine::NativeOwner>; 2],
     /// Extra filled-word, outcome and per-cell-extent allocations.
     pub(super) extras: [usize; 3],
     /// Additional boxed right correspondence, absent for every unary member.
@@ -74,6 +76,26 @@ pub(super) struct Plan {
     /// Prepaid full-prefix cleanup inventory.
     pub(super) cleanup: CleanupReceipt,
 }
+/// Prepay repeated immutable vacancy scans before reserving any destination identity.
+fn prepay_slot_scans(heap: &Heap, budget: &mut nrz_bindings::Budget) -> Result<(), LoanError> {
+    // Planning inspects descriptor vacancies three times and native vacancies twice;
+    // the final occupation scans are prepaid with preparation below.
+    charge(
+        budget,
+        heap.descriptors
+            .slots
+            .scan_work()
+            .checked_mul(3)
+            .and_then(|work| {
+                work.checked_add(
+                    (heap.masks.layouts.scan_work() + heap.masks.masks.scan_work()) * 2,
+                )
+            })
+            .ok_or(LoanError::CountOverflow)?,
+    )?;
+    Ok(())
+}
+
 impl Plan {
     /// Authenticate inventory and prepay every acquisition/failure prefix on the original ledger.
     pub(super) fn new<P: Scalar + 'static>(
@@ -83,21 +105,7 @@ impl Plan {
     ) -> Result<Self, LoanError> {
         let declaration = &request.destination;
         charge(budget, 1)?;
-        // Planning inspects descriptor vacancies three times and native vacancies twice;
-        // the final occupation scans are prepaid with preparation below.
-        charge(
-            budget,
-            heap.descriptors
-                .slots
-                .scan_work()
-                .checked_mul(3)
-                .and_then(|work| {
-                    work.checked_add(
-                        (heap.masks.layouts.scan_work() + heap.masks.masks.scan_work()) * 2,
-                    )
-                })
-                .ok_or(LoanError::CountOverflow)?,
-        )?;
+        prepay_slot_scans(heap, budget)?;
         let present = declaration.present();
         let channels = present.into_iter().filter(|present| *present).count();
         let length = declaration.extent.entries();
@@ -110,7 +118,12 @@ impl Plan {
             rounded: slab_bytes::<P>(length)?,
         };
         let member = request.member()?;
-        let debit_count = member.debits();
+        let prelude = match &member.law().recipe {
+            crate::kernels::contract::Recipe::ProjectedAffine(affine) => Some(&affine.prelude),
+            _ => None,
+        };
+        let constants = super::super::affine::reserve(heap, prelude, budget)?;
+        let debit_count = member.debits() + constants.iter().flatten().count();
         charge(budget, heap.loans.debits.len())?;
         let debit_slots = heap.loans.vacant_inventory::<23>(debit_count)?;
         let group_capacity = heap
@@ -153,6 +166,7 @@ impl Plan {
             extras[2] = rc_bytes::<[crate::Extent; 2]>();
         }
         let mut plan = Self {
+            constants,
             identities,
             permit: ResourcePermit {
                 scope: heap.scope,
@@ -269,6 +283,9 @@ impl Plan {
         )?;
         retained = add(retained, self.extras.into_iter().try_fold(0_usize, add)?)?;
         retained = add(retained, self.side_bytes)?;
+        for owner in self.constants.iter().flatten() {
+            retained = add(retained, owner.bytes)?;
+        }
         let mut scratch = 0;
         for (growth, old) in [
             heap.descriptors
@@ -338,7 +355,13 @@ fn identities(debits: usize, binary: bool) -> Result<[u64; 26], LoanError> {
     if debits == 23 {
         return Ok(crate::heap::identity::identity_block::<26>()?);
     }
-    if binary {
+    if debits == 19 {
+        let source = crate::heap::identity::identity_block::<22>()?;
+        return Ok(std::array::from_fn(|index| {
+            source.get(index).copied().unwrap_or(0)
+        }));
+    }
+    if binary || debits == 18 {
         let source = crate::heap::identity::identity_block::<21>()?;
         Ok(std::array::from_fn(|index| {
             source.get(index).copied().unwrap_or(0)

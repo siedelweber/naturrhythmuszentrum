@@ -32,6 +32,8 @@ pub(super) enum Member<'a> {
     Square(&'a Rc<KernelContract>),
     /// Native projected unary laws read directly through a tile-bound map.
     ProjectedElementwise(&'a Rc<KernelContract>, crate::Elementwise),
+    /// Checked scalar affine prelude over native cell incidence.
+    ProjectedAffine(&'a Rc<KernelContract>),
     /// Relative endpoint target with its exact retained original correspondence.
     PreparedExpm1(&'a Rc<KernelContract>, &'a PreparedExpm1Operation),
     /// Binary64 exact enclosure of either sign of a separated represented box.
@@ -69,6 +71,7 @@ impl<'a> Member<'a> {
             (Recipe::ProjectedElementwise(_, function), None) => {
                 Ok(Self::ProjectedElementwise(law, *function))
             }
+            (Recipe::ProjectedAffine(..), None) => Ok(Self::ProjectedAffine(law)),
             (Recipe::Transform(_), None) => Ok(Self::Transform(law)),
             (Recipe::Elementwise(Elementwise::Square), None) => Ok(Self::Square(law)),
             (Recipe::Elementwise(Elementwise::Reciprocal), None) => Ok(Self::Reciprocal(law)),
@@ -87,6 +90,7 @@ impl<'a> Member<'a> {
     pub(super) const fn law(self) -> &'a Rc<KernelContract> {
         match self {
             Self::Transform(law)
+            | Self::ProjectedAffine(law)
             | Self::ProjectedElementwise(law, _)
             | Self::Square(law)
             | Self::Reciprocal(law)
@@ -99,6 +103,7 @@ impl<'a> Member<'a> {
     pub(super) const fn roles(self) -> usize {
         match self {
             Self::Transform(_)
+            | Self::ProjectedAffine(_)
             | Self::ProjectedElementwise(..)
             | Self::Square(_)
             | Self::Reciprocal(_)
@@ -111,6 +116,7 @@ impl<'a> Member<'a> {
     pub(super) const fn debits(self) -> usize {
         match self {
             Self::Transform(_)
+            | Self::ProjectedAffine(_)
             | Self::ProjectedElementwise(..)
             | Self::Square(_)
             | Self::Reciprocal(_)
@@ -133,14 +139,28 @@ impl<'a> Member<'a> {
     }
     /// Native maps change cell incidence for either movement or direct arithmetic.
     pub(super) const fn is_projected(self) -> bool {
-        matches!(self, Self::Transform(_) | Self::ProjectedElementwise(..))
+        matches!(
+            self,
+            Self::Transform(_) | Self::ProjectedAffine(_) | Self::ProjectedElementwise(..)
+        )
     }
     /// Publication records whether this member preserves input error or reports local arithmetic.
     pub(super) const fn error_scope(
         self,
         input: super::NumericalErrorScope,
     ) -> super::NumericalErrorScope {
-        if self.is_transform() {
+        if matches!(self, Self::ProjectedAffine(_)) {
+            match input {
+                super::NumericalErrorScope::HostInput
+                | super::NumericalErrorScope::PropagatedInput => {
+                    super::NumericalErrorScope::PropagatedInput
+                }
+                super::NumericalErrorScope::LocalOperation
+                | super::NumericalErrorScope::PropagatedLocal => {
+                    super::NumericalErrorScope::PropagatedLocal
+                }
+            }
+        } else if self.is_transform() {
             input
         } else {
             super::NumericalErrorScope::LocalOperation
@@ -151,6 +171,7 @@ impl<'a> Member<'a> {
         let law = self.law();
         match &law.recipe {
             Recipe::Transform(map) | Recipe::ProjectedElementwise(map, _) => Ok(map),
+            Recipe::ProjectedAffine(affine) => Ok(&affine.map),
             _ => Err(LoanError::UnsupportedContract),
         }
     }
@@ -165,6 +186,7 @@ impl<'a> Member<'a> {
             | Self::Square(_)
             | Self::Reciprocal(_)
             | Self::SquareRoot(_) => 12,
+            Self::ProjectedAffine(_) => 20,
             Self::Transform(_) => 6,
             Self::PreparedExpm1(..) => 0,
             Self::Binary(..) => 21,
@@ -184,6 +206,7 @@ impl<'a> Member<'a> {
         }
         match self {
             Self::Square(_) => None,
+            Self::ProjectedAffine(_) => Some("projected affine traversal"),
             Self::ProjectedElementwise(_, crate::Elementwise::Square) => {
                 Some("projected square traversal")
             }
@@ -269,7 +292,10 @@ impl<'a> Member<'a> {
         coverage: crate::Coverage,
     ) -> Result<(), LoanError> {
         match self {
-            Self::Transform(_) | Self::ProjectedElementwise(..) | Self::Square(_) => Ok(()),
+            Self::Transform(_)
+            | Self::ProjectedAffine(_)
+            | Self::ProjectedElementwise(..)
+            | Self::Square(_) => Ok(()),
             Self::Binary(..) => {
                 if source.coverage != crate::Coverage::RepresentedInputs
                     || coverage != crate::Coverage::RepresentedInputs
@@ -304,6 +330,7 @@ impl<'a> Member<'a> {
     pub(super) const fn storage_failure(self, component: usize) -> CellOutcome {
         match self {
             Self::Transform(_)
+            | Self::ProjectedAffine(_)
             | Self::ProjectedElementwise(..)
             | Self::Square(_)
             | Self::Reciprocal(_)

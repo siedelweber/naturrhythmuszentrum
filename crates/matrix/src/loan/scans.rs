@@ -388,6 +388,22 @@ impl Heap {
         let expired = match &debit.kind {
             AllocationKind::PreparedOwner { witness, .. } => witness.strong_count() == 0,
             AllocationKind::PreparedUse(witness) => witness.strong_count() == 0,
+            AllocationKind::Constant(witness) => {
+                if debit.owner != DebitOwner::Constant(self.scope)
+                    || debit.key == 0
+                    || debit.elements != 0
+                {
+                    return Err(LoanError::WrongLoan);
+                }
+                if witness.strong_count() == 0 {
+                    let revision = self.loans.next_revision()?;
+                    charge(budget, 1)?;
+                    let key = debit.key;
+                    self.loans.release(slot, key);
+                    self.loans.revision = revision;
+                }
+                return Ok(());
+            }
             AllocationKind::Numerical
             | AllocationKind::Tracking
             | AllocationKind::Owner

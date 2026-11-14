@@ -101,3 +101,11 @@ impl<P: Scalar + 'static> PiConstant<P> {
         PiConstantEvidence::new(Rc::clone(&self.0))
     }
 }
+
+impl<P: Scalar + 'static> PiConstant<P> {
+    /// Non-owning allocation identity lets managed consumers count this immutable region once.
+    pub(crate) fn allocation_witness(&self) -> std::rc::Weak<dyn std::any::Any> {
+        let owner: Rc<dyn std::any::Any> = self.0.clone();
+        Rc::downgrade(&owner)
+    }
+}

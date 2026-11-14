@@ -62,6 +62,19 @@ impl Heap {
         super::admission::request_kind(self, request, kind, true, origin, account)
     }
 
+    /// Apply an exact scalar affine law through its original tile projection.
+    pub fn request_projected_affine<P: Scalar + 'static>(
+        &mut self,
+        request: PointwiseRequest<P>,
+        account: &mut ExecutionAccount,
+    ) -> ApplicationRequest<P> {
+        let origin = match super::chain::origin(&request.input) {
+            Ok(origin) => origin,
+            Err(error) => return ApplicationRequest::ApplicationRefused(error.into(), request),
+        };
+        super::admission::request_kind(self, request, KernelKind::LinearMap, true, origin, account)
+    }
+
     /// Copy selected original values and both companions into disjoint dense owners.
     ///
     /// The checked entry transform preserves component order within each copied cell.
@@ -110,6 +123,18 @@ pub(super) fn check<P: Scalar + 'static>(
     let source = super::contract::source(request)?;
     let member = request.member()?;
     let map = member.map()?;
+    if let crate::kernels::contract::Recipe::ProjectedAffine(affine) = &member.law().recipe {
+        charge(budget, 1)?;
+        // Admission checks current format/revision before allocation. Evaluation binds
+        // again against its actual traversal permit context before reading any cell.
+        let context = nrz_scalar::ArithmeticContext::new()
+            .map_err(crate::KernelError::from)
+            .map_err(crate::OperationError::from)?;
+        affine
+            .prelude
+            .bind::<P>(&context)
+            .map_err(|_| LoanError::UnsupportedContract)?;
+    }
     let destination = request.destination;
     if map.source() != source.declaration.extent
         || map.target() != destination.extent

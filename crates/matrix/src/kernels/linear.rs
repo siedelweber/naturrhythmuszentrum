@@ -23,3 +23,12 @@ pub(crate) struct LinearSchedule {
     /// Explicit exact-coefficient import limits.
     pub(crate) literals: LiteralLimits,
 }
+
+/// Original native cell incidence and its checked scalar coefficient owner remain affine-only.
+#[derive(Clone, Debug)]
+pub(crate) struct ProjectedAffine {
+    /// Immutable original source-to-target incidence.
+    pub(crate) map: crate::EntryMap,
+    /// Original exact definitions and native enclosure owner.
+    pub(crate) prelude: super::affine::Prelude,
+}

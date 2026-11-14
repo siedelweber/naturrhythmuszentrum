@@ -71,7 +71,8 @@ impl Heap {
                                 result.uses =
                                     result.uses.checked_add(1).ok_or(LoanError::CountOverflow)?;
                             }
-                            AllocationKind::Numerical
+                            AllocationKind::Constant(_)
+                            | AllocationKind::Numerical
                             | AllocationKind::Tracking
                             | AllocationKind::Owner
                             | AllocationKind::Pin

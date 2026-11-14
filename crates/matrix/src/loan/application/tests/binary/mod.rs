@@ -9,7 +9,7 @@ mod constructor_bytes;
 mod correspondence;
 mod fixture;
 mod observation;
-mod oracle;
+pub(in crate::loan) mod oracle;
 mod ownership;
 mod physical;
 mod reclaim_work;

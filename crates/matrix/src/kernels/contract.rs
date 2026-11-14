@@ -70,6 +70,8 @@ pub(crate) enum Recipe {
     Transform(EntryMap),
     /// Native whole-cell projection followed by a closed unary enclosure.
     ProjectedElementwise(EntryMap, super::Elementwise),
+    /// One checked native coefficient prelude applied through original cell incidence.
+    ProjectedAffine(Box<super::linear::ProjectedAffine>),
     /// Backend product with an independent outward contraction.
     Product,
     /// A closed scalar-quantity schedule with an explicit per-attempt Work allowance.
@@ -97,7 +99,7 @@ impl KernelContract {
                 subtract: false, ..
             } => KernelKind::Add,
             Recipe::Sum { subtract: true, .. } => KernelKind::Subtract,
-            Recipe::Linear(_) => KernelKind::LinearMap,
+            Recipe::Linear(_) | Recipe::ProjectedAffine(..) => KernelKind::LinearMap,
             Recipe::Transform(_) => KernelKind::TransformEntries,
             Recipe::Product => KernelKind::Product,
             Recipe::Quantity(recipe) => recipe.kind(),

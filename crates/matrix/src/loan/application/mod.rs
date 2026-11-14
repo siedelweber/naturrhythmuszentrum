@@ -2,6 +2,7 @@
 //! One transferred source pin and one boxed core implement the closed pointwise laws.
 
 mod admission;
+pub(in crate::loan) mod affine;
 pub(super) mod binary;
 mod chain;
 mod contract;
@@ -209,6 +210,10 @@ impl<P: Scalar> std::fmt::Debug for ApplicationCore<P> {
 pub enum NumericalErrorScope {
     /// The host supplied the companion under its declared input contract.
     HostInput,
+    /// Propagates the host-declared numerical error through every admitted affine ancestor.
+    PropagatedInput,
+    /// Propagates a local arithmetic error through affine descendants, without host-chain coverage.
+    PropagatedLocal,
     /// Reports only the numerical error of the arithmetic that last produced the companion.
     /// Inherited uncertainty is included in Total; Error is not a whole-chain bound.
     LocalOperation,
@@ -401,4 +406,4 @@ impl Heap {
 }
 
 #[cfg(test)]
-mod tests;
+pub(in crate::loan) mod tests;

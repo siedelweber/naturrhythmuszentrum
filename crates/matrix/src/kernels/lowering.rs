@@ -84,3 +84,48 @@ fn represented<P: Scalar + 'static>(
         enclosure: Enclosure::new(lower, upper).map_err(KernelError::from)?,
     })
 }
+
+/// Meter exact factor recognition and native lowering before binding a projected affine tile.
+pub(crate) fn checked_definition<P: Scalar + 'static>(
+    definition: &crate::ExactCoefficient,
+    pi: &crate::PiConstant<P>,
+    exact: &nrz_bindings::LimitsOverride,
+    literals: LiteralLimits,
+    context: &ArithmeticContext,
+    budget: &mut nrz_bindings::Budget,
+) -> Result<Coefficient<P>, crate::ConversionError> {
+    let exported = budget.with_work_phase(
+        "matrix affine prelude",
+        "exact coefficient export",
+        |budget| {
+            crate::conversion::exact_attempt(exact, budget, |policy, work| {
+                nrz_bindings::ExactEnclosureExport::new_with_work(
+                    &definition.exact_map().scale,
+                    policy,
+                    work,
+                )
+            })
+        },
+    )?;
+    let value = budget.with_work_phase(
+        "matrix affine prelude",
+        "native coefficient lowering",
+        |budget| {
+            crate::conversion::enclose_pi_factor(
+                (
+                    exported.rational_factor(),
+                    exported.pi_factor(),
+                    exported.work_used(),
+                ),
+                pi,
+                literals,
+                context,
+                budget,
+            )
+        },
+    )?;
+    Ok(Coefficient {
+        center: value.center().get(),
+        enclosure: value.enclosure(),
+    })
+}

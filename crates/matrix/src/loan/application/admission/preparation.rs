@@ -97,6 +97,7 @@ pub(super) fn prepare<P: Scalar + 'static>(
         layouts,
         masks,
     } = records(identity, descriptors, layouts, masks, &mut guard)?;
+    retain_constants(heap, &plan, &mut debits)?;
     let declaration = declaration(request.destination);
     #[cfg(test)]
     crate::loan::fault::before()?;
@@ -136,6 +137,24 @@ pub(super) fn prepare<P: Scalar + 'static>(
         revision: plan.revision,
     })
 }
+/// Add only newly adopted numerical owners to the private, not-yet-installed debit inventory.
+fn retain_constants(heap: &Heap, plan: &Plan, debits: &mut Vec<Debit>) -> Result<(), LoanError> {
+    for owner in plan.constants.iter().flatten() {
+        let key = *plan
+            .identities
+            .get(3 + debits.len())
+            .ok_or(LoanError::WrongLoan)?;
+        debits.push(Debit {
+            kind: AllocationKind::Constant(owner.witness.clone()),
+            owner: crate::loan::registry::DebitOwner::Constant(heap.scope),
+            key,
+            elements: 0,
+            bytes: owner.bytes,
+        });
+    }
+    Ok(())
+}
+
 /// Fixed Lower/Upper identity order is captured before publication moves any token.
 fn endpoint_identities(pair: &[LoanChannel; 2]) -> [(usize, u64, u64); 2] {
     pair.each_ref().map(|channel| {

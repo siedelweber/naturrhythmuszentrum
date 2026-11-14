@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 //! Physical kernel admission is retained beside a separate numerical execution contract.
 
+mod affine;
 mod draft;
 pub(crate) mod linear;
 mod nonlinear;

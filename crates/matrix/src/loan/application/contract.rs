@@ -33,7 +33,7 @@ pub(super) fn check<P: Scalar + 'static>(
         return super::binary::check_request(heap, request, account, budget);
     }
     let projected = matches!(&request.operation.recipe, crate::binding::NativeRecipe::Kernel(law)
-        if matches!(law.recipe, crate::kernels::contract::Recipe::ProjectedElementwise(..)));
+        if matches!(law.recipe, crate::kernels::contract::Recipe::ProjectedElementwise(..) | crate::kernels::contract::Recipe::ProjectedAffine(..)));
     if projected != request.projected_entry {
         return Err(LoanError::UnsupportedContract.into());
     }

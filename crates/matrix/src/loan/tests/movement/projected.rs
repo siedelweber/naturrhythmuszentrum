@@ -5,6 +5,7 @@ use super::{Setup, TestResult, candidate, empty, publish};
 use crate::{ApplicationEvaluation, ApplicationRequest, HostChannel, PointwiseRequest};
 use nrz_scalar::Scalar;
 
+mod affine;
 mod boundaries;
 mod continuation;
 mod coverage;
