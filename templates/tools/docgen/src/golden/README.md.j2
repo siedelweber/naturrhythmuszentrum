@@ -3,7 +3,7 @@
 
 # Golden checker evidence · `guide:docgen:golden-evidence`
 
-The public bounded reader validates one closed payload and preserves typed exact-arithmetic resource faults. Its checker tests consume the seven-row CC0 fixture `tools/docgen/tests/support/prepared-binary64-golden-seven.json`, while documentation checking admits the forty-five-row dataset `data/golden/prepared-binary64.json`. The compact sigmoid and tanh coverage also reads that dataset structurally.
+The public bounded reader validates one closed payload and preserves typed exact-arithmetic resource faults. Its checker tests consume the seven-row CC0 fixture `tools/docgen/tests/support/prepared-binary64-golden-seven.json`, while documentation checking admits the forty-five-row dataset `data/golden/prepared-binary64.json`. The compact sigmoid and tanh coverage also reads that dataset structurally. The two expression-constant rows in `data/golden/exact-constant.json` retain both routes and their golden intersection.
 
 **Table (Golden controls)** · `tab:docgen:golden-controls`
 
@@ -16,3 +16,14 @@ The public bounded reader validates one closed payload and preserves typed exact
 |(`test:unit:golden-enforces-resource-boundaries`)|Exact-limit and one-below capacities and prior consumption are checked.|
 |(`test:unit:golden-refuses-json-ambiguity`)|Duplicate keys, trailing input and excessive nesting cannot overwrite evidence.|
 |(`test:unit:golden-admits-closed-refusal-forms`)|All four refusal forms are admitted without golden evidence.|
+|(`test:unit:constant-golden-versions`)|Both row forms require version 1.1.0; versions 1.0.0 and 1.0.1 refuse.|
+|(`test:unit:constant-golden-association-controls`)|Original recipe, context, judgment, route, target and intersection mutations refuse.|
+|(`test:unit:constant-golden-unknown-members`)|Every new record rejects an additional member as Fields.|
+|(`test:unit:constant-golden-closed-fields`)|Closed values, scope encoding, registry width and list cardinalities retain distinct causes.|
+|(`test:unit:constant-golden-empty-identities`)|Empty identities refuse even when every association is consistent.|
+|(`test:unit:constant-golden-geometry`)|Judgment-width equality, non-nested intersection and width ceilings have isolated controls.|
+|(`test:unit:constant-golden-shared-identity`)|Individually valid rows cannot change a shared original id's binding.|
+|(`test:unit:constant-golden-preflight`)|Judgment endpoint capacities are checked before the allocating decoder.|
+|(`test:integration:constant-golden-cas-route`)|Refined original enclosures replay independently; changed live identities refuse.|
+|(`test:integration:constant-golden-series`)|An independent rational series bounds β inside the published golden interval.|
+|(`test:integration:constant-golden-spacing`)|Integer-decoded neighbors bound both endpoint distances and pin success and spacing refusal.|

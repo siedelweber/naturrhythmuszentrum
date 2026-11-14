@@ -11,6 +11,7 @@ use nrz_cas::{Fault, Rational};
 use serde_json::{Map, Value};
 use thiserror::Error;
 
+mod constant;
 mod json;
 mod preflight;
 #[cfg(test)]
@@ -25,21 +26,21 @@ pub enum Cause {
     Fields,
     /// The namespace is not the prepared-binary64 namespace.
     Namespace,
-    /// Only the exact version triple is admitted.
+    /// The envelope or checker version is outside the admitted exact versions.
     Version,
     /// The owner, license, sources or labels are invalid.
     Envelope,
     /// A route kind is outside the closed pair.
     RouteKind,
-    /// Route metadata or ordered references are invalid.
+    /// Route metadata or ordered references are invalid, or a width goal differs from its registry precision.
     Routes,
     /// Entry identifiers are empty or repeated.
     EntryId,
-    /// The operation is not one of the five laws.
+    /// The operation or expression is outside its closed row kind.
     Operation,
-    /// A target does not match its operation.
+    /// A target or width goal does not match its row kind.
     Target,
-    /// The expected-result form or refusal reason is unknown or operation-incompatible.
+    /// The expected-result form or refusal reason is unknown or row-incompatible.
     Expected,
     /// A power exponent is incompatible with its expected outcome.
     Exponent,
@@ -47,13 +48,13 @@ pub enum Cause {
     Rational,
     /// An input or golden interval has reversed endpoints.
     Ordering,
-    /// Evidence is missing, repeated, stray, reordered or bound to another input.
+    /// Evidence is missing, repeated, stray, reordered or bound to another input, expression, context or judgment.
     Association,
     /// The two route intervals are disjoint.
     EmptyIntersection,
     /// The published interval differs from the exact intersection.
     Intersection,
-    /// The published endpoint interval exceeds the width ceiling.
+    /// A published endpoint or judgment interval exceeds its width ceiling.
     Width,
     /// A promised exact result is not the required singleton.
     Exact,
@@ -63,7 +64,7 @@ pub enum Cause {
     Entries,
     /// A decoded rational spelling exceeds its ceiling before JSON tree allocation.
     Literal,
-    /// Target precision exceeds the declared encoding ceiling.
+    /// Target or width-goal precision exceeds the declared encoding ceiling.
     TargetBits,
     /// JSON nesting exceeds the declared ceiling or the hard maximum.
     Depth,
@@ -305,7 +306,7 @@ fn validate(
         "$.namespace",
     )?;
     ensure(
-        root.get("version")? == &serde_json::json!([1, 0, 0]),
+        root.get("version")? == &serde_json::json!([1, 1, 0]),
         Cause::Version,
         "$.version",
     )?;
@@ -362,6 +363,13 @@ fn validate(
     for (index, value) in entries.iter().enumerate() {
         let path = format!("$.entries[{index}]");
         let row = Record::new(value, &path)?;
+        if row.object.contains_key("kind") {
+            ensure(
+                row.record("width_goal")?.get("bits")? == &routes[0]["precision_bits"],
+                Cause::Routes,
+                &path,
+            )?;
+        }
         let id = row.text("id")?;
         ensure(
             !id.is_empty() && names.insert(id.to_owned()),
@@ -370,11 +378,14 @@ fn validate(
         )?;
         check_entry(&row, &ids)?;
     }
-    Ok(())
+    constant::associate_rows(entries)
 }
 
 /// Check one law's forms and endpoint-bound intersection evidence.
 fn entry(row: &Record<'_>, ids: &[&str], limits: Limits, budget: &mut Budget) -> Result<(), Error> {
+    if row.object.contains_key("kind") {
+        return constant::entry(row, ids, limits, budget);
+    }
     let operation = row.text("operation")?;
     ensure(
         matches!(operation, "exp" | "expm1" | "sigma" | "tanh" | "power"),

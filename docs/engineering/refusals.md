@@ -46,7 +46,7 @@ Wrappers retain their underlying numerical or symbolic cause. Recovery stop enum
 |DOCGEN|`Error`|`TemplateHeader`|failure|A template header violates the declared source contract.|`tools/docgen/src/error.rs`|
 |DOCGEN|`Error`|`TomlSyntax`|failure|An input TOML document is syntactically invalid.|`tools/docgen/src/error.rs`|
 |DOCGEN|`Error`|`TrackedText`|failure|Git cannot supply the tracked-file inventory, or that inventory contains a path that is not UTF-8.|`tools/docgen/src/error.rs`|
-|DOCGEN|`golden::Cause`|`Association`|failure|Evidence is missing, repeated, stray, reordered or bound to another input.|`tools/docgen/src/golden.rs`|
+|DOCGEN|`golden::Cause`|`Association`|failure|Evidence is missing, repeated, stray, reordered or bound to another input, expression, context or judgment.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Bytes`|resource|The byte ceiling was exceeded before parsing.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Depth`|resource|JSON nesting exceeds the declared ceiling or the hard maximum.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`EmptyIntersection`|failure|The two route intervals are disjoint.|`tools/docgen/src/golden.rs`|
@@ -54,22 +54,22 @@ Wrappers retain their underlying numerical or symbolic cause. Recovery stop enum
 |DOCGEN|`golden::Cause`|`EntryId`|failure|Entry identifiers are empty or repeated.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Envelope`|failure|The owner, license, sources or labels are invalid.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Exact`|failure|A promised exact result is not the required singleton.|`tools/docgen/src/golden.rs`|
-|DOCGEN|`golden::Cause`|`Expected`|failure|The expected-result form or refusal reason is unknown or operation-incompatible.|`tools/docgen/src/golden.rs`|
+|DOCGEN|`golden::Cause`|`Expected`|failure|The expected-result form or refusal reason is unknown or row-incompatible.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Exponent`|failure|A power exponent is incompatible with its expected outcome.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Fields`|failure|An object has missing, extra or wrongly typed fields.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Intersection`|failure|The published interval differs from the exact intersection.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Json`|failure|Invalid JSON or a duplicate object member.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Literal`|resource|A decoded rational spelling exceeds its ceiling before JSON tree allocation.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Namespace`|failure|The namespace is not the prepared-binary64 namespace.|`tools/docgen/src/golden.rs`|
-|DOCGEN|`golden::Cause`|`Operation`|failure|The operation is not one of the five laws.|`tools/docgen/src/golden.rs`|
+|DOCGEN|`golden::Cause`|`Operation`|failure|The operation or expression is outside its closed row kind.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Ordering`|failure|An input or golden interval has reversed endpoints.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`Rational`|failure|A number is not a canonical reduced rational string.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Cause`|`RouteKind`|failure|A route kind is outside the closed pair.|`tools/docgen/src/golden.rs`|
-|DOCGEN|`golden::Cause`|`Routes`|failure|Route metadata or ordered references are invalid.|`tools/docgen/src/golden.rs`|
-|DOCGEN|`golden::Cause`|`Target`|failure|A target does not match its operation.|`tools/docgen/src/golden.rs`|
-|DOCGEN|`golden::Cause`|`TargetBits`|resource|Target precision exceeds the declared encoding ceiling.|`tools/docgen/src/golden.rs`|
-|DOCGEN|`golden::Cause`|`Version`|failure|Only the exact version triple is admitted.|`tools/docgen/src/golden.rs`|
-|DOCGEN|`golden::Cause`|`Width`|failure|The published endpoint interval exceeds the width ceiling.|`tools/docgen/src/golden.rs`|
+|DOCGEN|`golden::Cause`|`Routes`|failure|Route metadata or ordered references are invalid, or a width goal differs from its registry precision.|`tools/docgen/src/golden.rs`|
+|DOCGEN|`golden::Cause`|`Target`|failure|A target or width goal does not match its row kind.|`tools/docgen/src/golden.rs`|
+|DOCGEN|`golden::Cause`|`TargetBits`|resource|Target or width-goal precision exceeds the declared encoding ceiling.|`tools/docgen/src/golden.rs`|
+|DOCGEN|`golden::Cause`|`Version`|failure|The envelope or checker version is outside the admitted exact versions.|`tools/docgen/src/golden.rs`|
+|DOCGEN|`golden::Cause`|`Width`|failure|A published endpoint or judgment interval exceeds its width ceiling.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Error`|`Arithmetic`|failure|The exact engine refused arithmetic; its original Fault and caller-owned cumulative ledger are preserved.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Error`|`Invalid`|failure|An golden structure or explicit parser ceiling failed, with a closed Cause and JSON location.|`tools/docgen/src/golden.rs`|
 |DOCGEN|`golden::Error`|`Io`|failure|Reading the bounded input stream failed.|`tools/docgen/src/golden.rs`|

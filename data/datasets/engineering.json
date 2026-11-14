@@ -5534,7 +5534,7 @@
     },
     {
       "category": "failure",
-      "meaning": "Evidence is missing, repeated, stray, reordered or bound to another input.",
+      "meaning": "Evidence is missing, repeated, stray, reordered or bound to another input, expression, context or judgment.",
       "owner": "DOCGEN",
       "source": "tools/docgen/src/golden.rs",
       "type_name": "golden::Cause",
@@ -5598,7 +5598,7 @@
     },
     {
       "category": "failure",
-      "meaning": "The expected-result form or refusal reason is unknown or operation-incompatible.",
+      "meaning": "The expected-result form or refusal reason is unknown or row-incompatible.",
       "owner": "DOCGEN",
       "source": "tools/docgen/src/golden.rs",
       "type_name": "golden::Cause",
@@ -5654,7 +5654,7 @@
     },
     {
       "category": "failure",
-      "meaning": "The operation is not one of the five laws.",
+      "meaning": "The operation or expression is outside its closed row kind.",
       "owner": "DOCGEN",
       "source": "tools/docgen/src/golden.rs",
       "type_name": "golden::Cause",
@@ -5686,7 +5686,7 @@
     },
     {
       "category": "failure",
-      "meaning": "Route metadata or ordered references are invalid.",
+      "meaning": "Route metadata or ordered references are invalid, or a width goal differs from its registry precision.",
       "owner": "DOCGEN",
       "source": "tools/docgen/src/golden.rs",
       "type_name": "golden::Cause",
@@ -5694,7 +5694,7 @@
     },
     {
       "category": "failure",
-      "meaning": "A target does not match its operation.",
+      "meaning": "A target or width goal does not match its row kind.",
       "owner": "DOCGEN",
       "source": "tools/docgen/src/golden.rs",
       "type_name": "golden::Cause",
@@ -5702,7 +5702,7 @@
     },
     {
       "category": "resource",
-      "meaning": "Target precision exceeds the declared encoding ceiling.",
+      "meaning": "Target or width-goal precision exceeds the declared encoding ceiling.",
       "owner": "DOCGEN",
       "source": "tools/docgen/src/golden.rs",
       "type_name": "golden::Cause",
@@ -5710,7 +5710,7 @@
     },
     {
       "category": "failure",
-      "meaning": "Only the exact version triple is admitted.",
+      "meaning": "The envelope or checker version is outside the admitted exact versions.",
       "owner": "DOCGEN",
       "source": "tools/docgen/src/golden.rs",
       "type_name": "golden::Cause",
@@ -5718,7 +5718,7 @@
     },
     {
       "category": "failure",
-      "meaning": "The published endpoint interval exceeds the width ceiling.",
+      "meaning": "A published endpoint or judgment interval exceeds its width ceiling.",
       "owner": "DOCGEN",
       "source": "tools/docgen/src/golden.rs",
       "type_name": "golden::Cause",
@@ -5887,7 +5887,7 @@
       "path": "tools/docgen/src/error.rs"
     },
     {
-      "fingerprint": "5e02f7c6aa459052",
+      "fingerprint": "24f3f1ff020fcb34",
       "path": "tools/docgen/src/golden.rs"
     }
   ]

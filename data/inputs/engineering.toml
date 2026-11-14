@@ -846,7 +846,7 @@ source = "diagnostic 5 on the host; same seed and diagnostic patch; seed 51105ae
 
 [[source_versions]]
 path = "tools/docgen/src/golden.rs"
-fingerprint = "5e02f7c6aa459052"
+fingerprint = "24f3f1ff020fcb34"
 
 [[refusals]]
 owner = "DOCGEN"
@@ -909,7 +909,7 @@ owner = "DOCGEN"
 type_name = "golden::Cause"
 variant = "Version"
 category = "failure"
-meaning = "Only the exact version triple is admitted."
+meaning = "The envelope or checker version is outside the admitted exact versions."
 source = "tools/docgen/src/golden.rs"
 
 [[refusals]]
@@ -933,7 +933,7 @@ owner = "DOCGEN"
 type_name = "golden::Cause"
 variant = "Routes"
 category = "failure"
-meaning = "Route metadata or ordered references are invalid."
+meaning = "Route metadata or ordered references are invalid, or a width goal differs from its registry precision."
 source = "tools/docgen/src/golden.rs"
 
 [[refusals]]
@@ -949,7 +949,7 @@ owner = "DOCGEN"
 type_name = "golden::Cause"
 variant = "Operation"
 category = "failure"
-meaning = "The operation is not one of the five laws."
+meaning = "The operation or expression is outside its closed row kind."
 source = "tools/docgen/src/golden.rs"
 
 [[refusals]]
@@ -957,7 +957,7 @@ owner = "DOCGEN"
 type_name = "golden::Cause"
 variant = "Target"
 category = "failure"
-meaning = "A target does not match its operation."
+meaning = "A target or width goal does not match its row kind."
 source = "tools/docgen/src/golden.rs"
 
 [[refusals]]
@@ -965,7 +965,7 @@ owner = "DOCGEN"
 type_name = "golden::Cause"
 variant = "Expected"
 category = "failure"
-meaning = "The expected-result form or refusal reason is unknown or operation-incompatible."
+meaning = "The expected-result form or refusal reason is unknown or row-incompatible."
 source = "tools/docgen/src/golden.rs"
 
 [[refusals]]
@@ -989,7 +989,7 @@ owner = "DOCGEN"
 type_name = "golden::Cause"
 variant = "Association"
 category = "failure"
-meaning = "Evidence is missing, repeated, stray, reordered or bound to another input."
+meaning = "Evidence is missing, repeated, stray, reordered or bound to another input, expression, context or judgment."
 source = "tools/docgen/src/golden.rs"
 
 [[refusals]]
@@ -1013,7 +1013,7 @@ owner = "DOCGEN"
 type_name = "golden::Cause"
 variant = "Width"
 category = "failure"
-meaning = "The published endpoint interval exceeds the width ceiling."
+meaning = "A published endpoint or judgment interval exceeds its width ceiling."
 source = "tools/docgen/src/golden.rs"
 
 [[refusals]]
@@ -1053,7 +1053,7 @@ owner = "DOCGEN"
 type_name = "golden::Cause"
 variant = "TargetBits"
 category = "resource"
-meaning = "Target precision exceeds the declared encoding ceiling."
+meaning = "Target or width-goal precision exceeds the declared encoding ceiling."
 source = "tools/docgen/src/golden.rs"
 
 [[refusals]]

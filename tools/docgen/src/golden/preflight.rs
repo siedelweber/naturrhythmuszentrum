@@ -23,6 +23,8 @@ enum Role {
     Row,
     /// Original point or box.
     Input,
+    /// Expression enclosure judgment and its exact endpoint spellings.
+    Judgment,
     /// Published endpoint intervals.
     Golden,
     /// Endpoint evidence array.
@@ -49,12 +51,13 @@ impl Role {
             (Self::Row, b"input") => Self::Input,
             (Self::Row, b"golden") => Self::Golden,
             (Self::Row, b"evidence") => Self::Evidence,
+            (Self::Row, b"judgment") => Self::Judgment,
             (Self::Row, b"exponent") | (Self::Input, b"point") | (Self::Endpoint, b"input") => {
                 Self::Number
             }
             (Self::Input, b"box")
             | (Self::Golden, b"point" | b"lower_endpoint" | b"upper_endpoint")
-            | (Self::Route, b"interval") => Self::Numbers,
+            | (Self::Route | Self::Judgment, b"interval") => Self::Numbers,
             (Self::Endpoint, b"routes") => Self::Routes,
             _ => Self::Other,
         }

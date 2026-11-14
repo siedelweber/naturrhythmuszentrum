@@ -7,6 +7,7 @@ use serde_json::{Value, json};
 use super::{Cause, Error, Limits, read};
 
 mod bounds;
+mod constants;
 
 /// Read the small CC0 fixture, never a separately implemented validator.
 ///
