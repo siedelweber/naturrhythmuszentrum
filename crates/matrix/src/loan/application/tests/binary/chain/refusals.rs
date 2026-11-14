@@ -288,13 +288,19 @@ fn chain_unrelated_legacy_relocation_keeps_current_lineage() -> TestResult {
     Ok(())
 }
 
-/// A native binary32 binary result remains readable but cannot supply a chained Square.
+/// The same binary result admits a binary64 chained Square and refuses binary32 by format.
 /// ´test:unit:loan-binary32-binary-chain-refusal´
 #[test]
 fn loan_binary32_binary_chain_refusal() -> TestResult {
+    binary_chain_format::<f64>()?;
+    binary_chain_format::<f32>()
+}
+
+/// Identical occupations, coverage and values isolate the native-format admission check.
+fn binary_chain_format<P: nrz_scalar::Scalar + 'static>() -> TestResult {
     use crate::loan::fault;
     use std::rc::Rc;
-    let mut setup = super::super::custom::<f32>(
+    let mut setup = super::super::custom::<P>(
         1,
         1,
         [2; 2],
@@ -318,6 +324,23 @@ fn loan_binary32_binary_chain_refusal() -> TestResult {
         2,
         &mut setup.account,
     )?;
+    if P::PRECISION == nrz_scalar::Precision::F64 {
+        let owner = common::ready(
+            setup
+                .heap
+                .request_chained_pointwise_square(request, &mut setup.account),
+        )?;
+        let owner = super::candidate(owner, &mut setup.account)?;
+        let (tile, _) =
+            super::published(setup.heap.publish_application(owner, &mut setup.account))?;
+        assert_eq!(
+            tile.into_pin()
+                .historical_reader(&mut setup.account)?
+                .read_component(crate::HostChannel::Center, 0, 0, &mut setup.account)?,
+            super::super::native::<P>(36.0)
+        );
+        return Ok(());
+    }
     let pointer = Rc::as_ptr(&request.input.record);
     let ticket = request.input.ticket()?;
     fault::reset_reads();
@@ -341,7 +364,7 @@ fn loan_binary32_binary_chain_refusal() -> TestResult {
             .input
             .historical_reader(&mut setup.account)?
             .read_component(crate::HostChannel::Center, 0, 0, &mut setup.account,)?,
-        6.0
+        super::super::native::<P>(6.0)
     );
     Ok(())
 }
