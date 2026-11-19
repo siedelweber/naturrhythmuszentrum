@@ -445,6 +445,7 @@ fn finish(
         request: request.clone(),
         certificate: certificate.clone(),
         interval,
+        retained_bytes: bytes,
     })
 }
 
