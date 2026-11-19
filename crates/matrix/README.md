@@ -1241,7 +1241,11 @@ The independent truth oracle uses alternating expm1 sums away from zero. For 0<=
 
 ## Scalar dyadic-power evidence · `sec:matrix:scalar-dyadic-power-evidence`
 
-The numerical point leaf implements (`[SCALAR-alg:scalar:dyadic-power-schedule]`) without an original-expression owner. Independent exact rational replay checks every root, square, set-bit product, midpoint and displacement, including a successful subnormal lower bound and a separate finite upper-bound refusal (`test:integration:scalar-dyadic-power-reconstruction`). The unchanged 24-row golden corpus is read structurally: 15 success rows supply 17 endpoint records, each wholly contained at its own point, and nine refusals preserve phase and cause (`test:integration:scalar-dyadic-power-golden-values`). A field-visiting subscriber observes original inputs, typed results and bounded completed-prefix counts without exact Work (`test:integration:scalar-dyadic-power-observation`). Retained authority and masked membership remain separate work.
+The numerical point leaf implements (`[SCALAR-alg:scalar:dyadic-power-schedule]`) without an original-expression owner. Independent exact rational replay checks every root, square, set-bit product, midpoint and displacement, including a successful subnormal lower bound and a separate finite upper-bound refusal (`test:integration:scalar-dyadic-power-reconstruction`). The unchanged 24-row golden corpus is read structurally: 15 success rows supply 17 endpoint records, each wholly contained at its own point, and nine refusals preserve phase and cause (`test:integration:scalar-dyadic-power-golden-values`). A field-visiting subscriber observes original inputs, typed results and bounded completed-prefix counts without exact Work (`test:integration:scalar-dyadic-power-observation`). The scalar observation control runs alone in the `dyadic_power_observation` integration target, so unrelated tests cannot register its callsites during subscriber installation. Retained authority and masked membership remain separate work.
+
+|Function|Label|Command|Claim|
+|--------|-----|-------|-----|
+|`scalar_dyadic_power_observation`|(`test:integration:scalar-dyadic-power-observation`)|`cargo test --locked -p nrz-matrix --test dyadic_power_observation scalar_dyadic_power_observation -- --exact`|An isolated subscriber observes the original inputs, typed outcomes and completed schedule prefixes, with no exact Work.|
 
 ## Raw benchmark boundary · `sec:matrix:raw-benchmark-boundary`
 
